@@ -1,11 +1,231 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<title>Student Space Systems at the University of Illinois at Urbana-Champaign</title>
+
+  		<link rel="stylesheet" href="https://cdn.rawgit.com/alpixel/jMenu/master/css/jmenu.css">
+  		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.2.0/components/icon.min.css">
+  		<link rel="stylesheet" href="./stylesheets/normalize.css">
+  		<link rel="stylesheet" href="./stylesheets/jquery-ui.min.css">
+  		<link rel="stylesheet" href="./stylesheets/style.css">
+  		
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script><!-- JQuery -->
+		<script src="./javascripts/script.js" defer></script>
+	</head>
+
+	<body>
+		<div class="canvas">
+			<div class="row">
+				<!-- Begin logo -->
+				<img src="./images/sss_logo.png" id="logo" alt="Logo">
+				<!-- End logo -->
+
+				<!-- Begin searchbar -->
+				<form id="searchbar">
+					<input type="text" id="search" size="20" maxlength="120" value="">
+					<input type="submit" value="&#8594;">
+				</form>
+				<!-- End searchbar-->
+			</div>
+
+			<!-- Begin navbar -->
+			<ul id="navbar"><!-- jMenu class is added, too -->
+				<li><a href="#">About Us <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<ul>
+						<li><a href="#">Mission Statement</a></li>
+						<li><a href="#">Goals - Vision 2024</a></li>
+						<li><a href="#">Timeline</a></li>
+						<li><a href="#">Executive Board</a></li>
+						<li><a href="#">How We Started</a></li>
+						<li><a href="#">Why We're Different</a></li>
+						<li><a href="#">Inspirations</a></li>
+						<li><a href="#">Bylaws</a></li>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Obstacles</a>
+							<ul>
+								<li><a href="#">Budgetary</a></li>
+								<li><a href="#">Technology</a></li>
+								<li><a href="#">Expertise</a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li><a href="#">Rocket Manifest <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<ul>
+						<li><a href="#">Phase I</a></li>
+						<li><a href="#">Phase II</a><li>
+						<li><a href="#">Phase III</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Departments <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<ul>
+						<li><a href="#">Avionics</a></li>
+						<li><a href="#">Launch Systems</a></li>
+						<li><a href="#">Propulsion</a></li>
+						<li><a href="#">Special Projects</a></li>
+						<li><a href="#">Structures</a></li>
+						<li><a href="#">Outreach</a></li>
+						<li><a href="#">Safety</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contact <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<ul>
+						<li><a href="http://sab.ae.illinois.edu/sponsorship.php">Sponsorship</a></li>
+						<li><a href="#">Support Us</a></li>
+						<li><a href="#">Prospective Students</a></li>
+						<li><a href="#">Merchandise</a></li>
+						<li><a href="#">Contact Form</a></li>
+					</ul>
+				</li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="https://www.google.com/">Media <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<ul>
+						<li><a href="#">Photos</a></li>
+						<li><a href="#">Videos</a></li>
+						<li><a href="#">Social Media</a></li>
+						<li><a href="#">Newsletter Archive</a></li>
+					</ul>
+				</li>
+			</ul>
+			<!-- End navbar -->
+
+			<!-- Begin image gallery -->
+			<div class="jcarousel-wrapper" id="imagegallery">
+				<!-- Begin images -->
+				<div class="jcarousel">
+					<ul><!-- IMAGES HAVE TO BE 4:3 ASPECT RATIO OR WIDER -->
+						<li><img src="./images/image1.jpg" title="Canterbury" alt="Beautiful sunset in New Zealand. <a href='https://www.google.com'>Link to Google</a>"></li>
+						<li><img src="./images/image2.jpg" title="Himalayas" alt="Doge sitting on a peak in the Himalayas."></li>
+						<li><img src="./images/image3.jpg" title="Denali State Park" alt="A large state park in Alaska."></li>
+						<!--<li><img src="image4.jpg" title="Bashang Plateau" alt="A large plain area in Hebei Province."></li>-->
+						<li><img src="./images/image_reference.jpg" title="<a href='http://www.reddit.com/r/earthporn'>Desktop Background</a>" alt="The dimensions of this image is exactly 1024 by 768, making for an aspect ratio of 4:3."></li>
+						<li><img src="./images/image5.jpg" title="Great Wall of China" alt="The Great Wall on a clear day."></li>
+					</ul>
+				</div>
+				<!-- End images -->
+
+				<!-- Being caption -->
+				<div class="imagecaption"></div>
+				<!-- End caption -->
+
+				<!-- Begin controls -->
+				<a class="jcarousel-prev" href="#">&lt;</a>
+				<a class="jcarousel-next" href="#">&gt;</a>
+				<!-- End controls -->
+
+				<!-- Begin pagination -->
+				<div class="jcarousel-pagination"></div>
+				<!-- End pagination -->
+			</div>
+			<!-- End image gallery -->
+
+			<!-- Begin subscriptions bar -->
+			<ul id="socialmedia-wrapper">
+				<li><a href="https://www.facebook.com/"><i class="facebook square icon"></i></a></li>
+				<li><a href="https://www.twitter.com/"><i class="twitter square icon"></i></a></li>
+				<li><a href="https://www.youtube.com/"><i class="youtube square icon"></i></a></li>
+				<li><a href="https://plus.google.com/"><i class="google plus square icon"></i></a></li>
+				<li><a href="#"><i class="rss square icon"></i></a></li>
+				<li class="button"><button id="subscribebutton">Subscribe</button></li>
+			</ul>
+			<!-- End subscriptions bar -->
+
+			<!-- Start departments section -->
+			<div id="#departmentsection-wrapper">
+				<strong class="title">DEPARTMENTS</strong>
+				<ul class="tr">
+					<li class="department">
+						<img src="./images/departmenticon.jpg" alt="Avionics" class="departmenticon">
+						<strong>Avionics</strong>
+						<p>The Department of Avionics is responsible for producing all of the electronics packages for our main rockets. Their packages will record flight data, take video, control our rockets, and more.</p>
+					</li>
+					<li class="department">
+						<img src="./images/departmenticon.jpg" alt="Structures" class="departmenticon">
+						<strong>Structures</strong>
+						<p>The Department of Structures controls the bones of each rocket we build.  They conduct testing to ensure each component fits precisely to specification and can meet the stresses of the intended flight.</p>
+					</li>
+					<li class="department">
+						<img src="./images/departmenticon.jpg" alt="Propulsion" class="departmenticon">
+						<strong>Propulsion</strong>
+						<p>The Department of Propulsion oversees everything involving the booster stage of our rockets.  This often involves ground testing, experimental prototyping, and full design of the engines on most of our systems.</p>
+					</li>
+				</ul>
+				<ul class="tr">
+					<li class="department">
+						<img src="./images/departmenticon.jpg" alt="Ground Systems" class="departmenticon">
+						<strong>Ground Systems</strong>
+						<p>The Department of Ground Systems takes over when the other departments' jobs end.  They manage storage, transportation, and launch operations.</p>
+					</li>
+					<li class="department">
+						<img src="./images/departmenticon.jpg" alt="Outreach" class="departmenticon">
+						<strong>Outreach</strong>
+						<p>We recognize, like many other organization, that our biggest legacy will be in those we inspire by our work.  Our Outreach program will be the vessel by which this is made in the years to come through activities with youth and visits to local schools.</p>
+					</li>
+					<li class="department">
+						<img src="./images/departmenticon.jpg" alt="Special Projects" class="departmenticon">
+						<strong>Propulsion</strong>
+						<p>The Department of Special Projects has two purposes.  First off, they develop and test far out technologies for us to use in the future.  Second, they manage projects like our Level One Certification Program and our Space Grant teams that just do not have any other home.</p>
+					</li>
+				</ul>
+			</div>
+			<!-- End departments section -->
+
+			<!-- Start footer -->
+			<div class="footer" id="footer">
+				<div class="col">
+					<strong>Rockets</strong>
+					<ul>
+						<li><a href="#">Phase I</a></li>
+						<li><a href="#">Phase II</a></li>
+						<li><a href="#">Phase III</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<strong>Updates</strong>
+					<ul>
+						<li><a href="#">Social Media</a></li>
+						<li><a href="#">Gallery</a></li>
+						<li><a href="#">Launch Manifest</a></li>
+					</ul>
+				</div>
+				<div class="col">
+					<strong>About SSS</strong>
+					<ul>
+						<li><a href="#">Executive Board</a></li>
+						<li><a href="#">Mission Statement</a></li>
+						<li><a href="#">Timeline</a></li>
+					</ul>
+				</div>
+				<div class="address-col">
+					<img src="./images/sss_logo.png" id="footer-logo" alt="Logo">
+					<address>
+						<p>Talbot Laboratory</p>
+						<p>104 South Wright Street</p>
+						<p>Urbana, IL 61801</p>
+						<p><a href="mailto:uiuc.sss@gmail.com">uiuc.sss@gmail.com</a></p>
+					</address>
+				</div>
+				<p class="copyright">Copyright &copy; 2014 &middot; All Rights Reserved &middot; Student Space Systems at UIUC</p>
+			</div>
+			<!-- End footer -->
+		</div>
+
+		<!-- Begin extensions -->
+		<div class="navbar-extension"></div>
+		<div class="footer-extension"></div>
+		<!-- End extensions -->
+
+		<!-- Start scripts -->
+		<script src="https://code.jquery.com/ui/1.11.2/jquery-ui.min.js"></script><!-- JQuery UI -->
+		<script src="https://cdn.rawgit.com/alpixel/jMenu/master/js/jMenu.jquery.min.js"></script> <!-- jMenu -->
+
+		<!-- jCarousel -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel-control.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel-pagination.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel-autoscroll.min.js"></script>
+		<!-- End scripts -->
+	</body>
 </html>
