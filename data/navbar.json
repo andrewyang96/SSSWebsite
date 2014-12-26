@@ -1,0 +1,122 @@
+[
+    {
+        "About Us": [
+            {
+                "Mission Statement": "/aboutus/mission"
+            },
+            {
+                "Goals - Vision 2024": "/aboutus/goals"
+            },
+            {
+                "Timeline": "/aboutus/timeline"
+            },
+            {
+                "Executive Board": "/aboutus/execboard"
+            },
+            {
+                "How We Started": "/aboutus/origins"
+            },
+            {
+                "Why We're Different": "/aboutus/weareunique"
+            },
+            {
+                "Inspirations": "/aboutus/inspirations"
+            },
+            {
+                "Bylaws": "/aboutus/bylaws"
+            },
+            {
+                "Articles": "/aboutus/articles"
+            },
+            {
+                "Obstacles": [
+                    {
+                        "Budgetary": "/aboutus/obstacles/budgetary"
+                    },
+                    {
+                        "Technology": "/aboutus/obstacles/technology"
+                    },
+                    {
+                        "Expertise": "/aboutus/obstacles/expertise"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Rocket Manifest": [
+            {
+                "Phase I": "/rocketmanifest#phaseone"
+            },
+            {
+                "Phase II": "/rocketmanifest#phasetwo"
+            },
+            {
+                "Phase III": "/rocketmanifest#phasethree"
+            }
+        ]
+    },
+    {
+        "Departments": [
+            {
+                "Avionics": "/departments/avionics"
+            },
+            {
+                "Launch Systems": "/departments/launchsystems"
+            },
+            {
+                "Outreach": "/departments/outreach"
+            },
+            {
+                "Propulsion": "/departments/propulsion"
+            },
+            {
+                "Safety": "/departments/safety"
+            },
+            {
+                "Special Projects": "/departments/specialprojects"
+            },
+            {
+                "Structures": "/departments/structures"
+            }
+        ]
+    },
+    {
+        "Contact": [
+            {
+                "Sponsorship": "http://sab.ae.illinois.edu/sponsorship.php"
+            },
+            {
+                "Support Us": "/contact/supportus"
+            },
+            {
+                "Prospective Students": "/contact/prospective"
+            },
+            {
+                "Merchandise": "/contact/merch"
+            },
+            {
+                "Contact Form": "/contact/form"
+            }
+        ]
+    },
+    {
+        "FAQ": "/faq"
+    },
+    {
+        "Media": [
+            {
+                "Photos": "/media/photos"
+            },
+            {
+                "Videos": "/media/videos"
+            },
+            {
+                "Social Media": "/media/socialmedia"
+            },
+            {
+                "Newsletter Archive": "/media/newsletters"
+            }
+        ]
+    }
+]

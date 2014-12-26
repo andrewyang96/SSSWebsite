@@ -1,39 +1,26 @@
 <!-- Start departments section -->
 <div id="#departmentsection-wrapper">
 	<strong class="title">DEPARTMENTS</strong>
-	<ul class="tr">
-		<li class="department">
-			<img src="./images/departmenticon.jpg" alt="Avionics" class="departmenticon">
-			<strong>Avionics</strong>
-			<p>The Department of Avionics is responsible for producing all of the electronics packages for our main rockets. Their packages will record flight data, take video, control our rockets, and more.</p>
-		</li>
-		<li class="department">
-			<img src="./images/departmenticon.jpg" alt="Structures" class="departmenticon">
-			<strong>Structures</strong>
-			<p>The Department of Structures controls the bones of each rocket we build.  They conduct testing to ensure each component fits precisely to specification and can meet the stresses of the intended flight.</p>
-		</li>
-		<li class="department">
-			<img src="./images/departmenticon.jpg" alt="Propulsion" class="departmenticon">
-			<strong>Propulsion</strong>
-			<p>The Department of Propulsion oversees everything involving the booster stage of our rockets.  This often involves ground testing, experimental prototyping, and full design of the engines on most of our systems.</p>
-		</li>
-	</ul>
-	<ul class="tr">
-		<li class="department">
-			<img src="./images/departmenticon.jpg" alt="Ground Systems" class="departmenticon">
-			<strong>Ground Systems</strong>
-			<p>The Department of Ground Systems takes over when the other departments' jobs end.  They manage storage, transportation, and launch operations.</p>
-		</li>
-		<li class="department">
-			<img src="./images/departmenticon.jpg" alt="Outreach" class="departmenticon">
-			<strong>Outreach</strong>
-			<p>We recognize, like many other organization, that our biggest legacy will be in those we inspire by our work.  Our Outreach program will be the vessel by which this is made in the years to come through activities with youth and visits to local schools.</p>
-		</li>
-		<li class="department">
-			<img src="./images/departmenticon.jpg" alt="Special Projects" class="departmenticon">
-			<strong>Propulsion</strong>
-			<p>The Department of Special Projects has two purposes.  First off, they develop and test far out technologies for us to use in the future.  Second, they manage projects like our Level One Certification Program and our Space Grant teams that just do not have any other home.</p>
-		</li>
-	</ul>
+
+	<% for (var row in departments) { %>
+		<ul class="tr">
+
+			<% var row = departments[row]; %>
+			<% for (var department in row) { %>
+				<% if (row.hasOwnProperty(department)) { %>
+
+					<li class="department">
+						<img src="<%= row[department].img %>" alt="<%= department %>" class="departmenticon">
+						<strong><%= department %></strong>
+						<%- row[department].text %>
+					</li>
+
+				<% } %>
+				
+			<% } %>
+
+		</ul>
+	<% } %>
+	
 </div>
 <!-- End departments section -->

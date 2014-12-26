@@ -10,7 +10,7 @@ a {
 
 /* Center jMenu */
 .jMenu {
-  	margin: 10px auto 10px auto;
+  	margin: 0 auto 0 auto;
   	width: 1024px;
 }
 
@@ -201,7 +201,7 @@ have a fixed width and height (but it's not required).
 
 .row {
 	width: 1024px;
-	margin: 20px auto 0 auto;
+	margin: 20px auto 20px auto;
 }
 
 #logo {
@@ -292,8 +292,9 @@ i.icon {
 }
 
 .departmenticon {
+	/* Enforce 4:3 aspect ratio */
 	width: 300px;
-	height: auto;
+	height: 225px;
 }
 
 /* Footer CSS */

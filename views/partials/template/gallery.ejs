@@ -3,12 +3,17 @@
 	<!-- Begin images -->
 	<div class="jcarousel">
 		<ul><!-- IMAGES HAVE TO BE 4:3 ASPECT RATIO OR WIDER -->
-			<li><img src="./images/image1.jpg" title="Canterbury" alt="Beautiful sunset in New Zealand. <a href='https://www.google.com'>Link to Google</a>"></li>
-			<li><img src="./images/image2.jpg" title="Himalayas" alt="Doge sitting on a peak in the Himalayas."></li>
-			<li><img src="./images/image3.jpg" title="Denali State Park" alt="A large state park in Alaska."></li>
-			<!--<li><img src="image4.jpg" title="Bashang Plateau" alt="A large plain area in Hebei Province."></li>-->
-			<li><img src="./images/image_reference.jpg" title="<a href='http://www.reddit.com/r/earthporn'>Desktop Background</a>" alt="The dimensions of this image is exactly 1024 by 768, making for an aspect ratio of 4:3."></li>
-			<li><img src="./images/image5.jpg" title="Great Wall of China" alt="The Great Wall on a clear day."></li>
+			
+			<% gallery.forEach(function (item) { %>
+				<% var key = Object.keys(item)[0]; %>
+				<% var value = item[key]; %>
+
+				<li>
+					<img src="<%= value['src'] %>" title="<%= key %>" alt="<%= value['alt'] %>">
+				</li>
+				
+			<% }); %>
+			
 		</ul>
 	</div>
 	<!-- End images -->

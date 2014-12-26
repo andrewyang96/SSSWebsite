@@ -1,0 +1,32 @@
+[
+    {
+        "Canterbury": {
+            "alt": "Beautiful sunset in New Zealand. <a href='https://www.google.com'>Link to Google</a>",
+            "src": "./images/image1.jpg"
+        }
+    },
+    {
+        "Himalayas": {
+            "alt": "Doge sitting on a peak in the Himalayas.",
+            "src": "./images/image2.jpg"
+        }
+    },
+    {
+        "Denali State Park": {
+            "alt": "A large state park in Alaska.",
+            "src": "./images/image3.jpg"
+        }
+    },
+    {
+        "<a href='http://www.reddit.com/r/earthporn'>Desktop Background</a>": {
+            "alt": "The dimensions of this image is exactly 1024 by 768, making for an aspect ratio of 4:3.",
+            "src": "./images/image_reference.jpg"
+        }
+    },
+    {
+        "Great Wall of China": {
+            "alt": "The Great Wall on a clear day.",
+            "src": "./images/image5.jpg"
+        }
+    }
+]

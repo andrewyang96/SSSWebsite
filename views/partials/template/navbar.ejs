@@ -1,4 +1,39 @@
 <ul id="navbar"><!-- jMenu class is added, too -->
+	
+	<% var arrow = "<span class=\"ui-icon ui-icon-carat-1-s\"></span>" %>
+	<% var toHref = function (str) { return "/" + str.replace(" ", "").toLowerCase(); } %>
+
+	<% var parseList = function (array, firstLevel) { %>
+		<% if (firstLevel) { %>
+			<ul id="navbar" class="jMenu">
+		<% } else { %>
+			<ul>
+		<% } %>
+			<% array.forEach(function (item) { %>
+				<% if (firstLevel) { %>
+					<li class="jmenu-level-0">
+				<% } else { %>
+					<li>
+				<% } %>
+					<% var key = Object.keys(item)[0]; %>
+					<% var value = item[key]; %>
+					<% if (typeof value == "object") { %>
+						<a href="<%- toHref(key) %>"><%= key %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+						<% parseList(value, false) %>
+					<% } else if (typeof value == "string") { %>
+						<a href="<%- value %>"><%= key %></a>
+					<% } %>
+
+				</li>
+
+			<% }); %>
+		</ul>
+		
+	<% } %>
+
+	<% parseList(navbar, true); %>
+
+	<!--
 	<li><a href="#">About Us <span class="ui-icon ui-icon-carat-1-s"></span></a>
 		<ul>
 			<li><a href="#">Mission Statement</a></li>
@@ -56,4 +91,5 @@
 			<li><a href="#">Newsletter Archive</a></li>
 		</ul>
 	</li>
+	-->
 </ul>
