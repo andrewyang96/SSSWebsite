@@ -1,0 +1,44 @@
+{
+    "About Us": [
+        {
+            "Mission Statement": "/aboutus/mission"
+        },
+        {
+            "Goals - Vision 2024": "/aboutus/goals"
+        },
+        {
+            "Timeline": "/aboutus/timeline"
+        },
+        {
+            "Executive Board": "/aboutus/execboard"
+        },
+        {
+            "How We Started": "/aboutus/origins"
+        },
+        {
+            "Why We're Different": "/aboutus/weareunique"
+        },
+        {
+            "Inspirations": "/aboutus/inspirations"
+        },
+        {
+            "Bylaws": "/aboutus/bylaws"
+        },
+        {
+            "Articles": "/aboutus/articles"
+        },
+        {
+            "Obstacles": [
+                {
+                    "Budgetary": "/aboutus/obstacles/budgetary"
+                },
+                {
+                    "Technology": "/aboutus/obstacles/technology"
+                },
+                {
+                    "Expertise": "/aboutus/obstacles/expertise"
+                }
+            ]
+        }
+    ]
+}

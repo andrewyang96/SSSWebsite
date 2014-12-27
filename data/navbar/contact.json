@@ -1,0 +1,19 @@
+{
+	"Contact": [
+        {
+            "Sponsorship": "http://sab.ae.illinois.edu/sponsorship.php"
+        },
+        {
+            "Support Us": "/contact/supportus"
+        },
+        {
+            "Prospective Students": "/contact/prospective"
+        },
+        {
+            "Merchandise": "/contact/merch"
+        },
+        {
+            "Contact Form": "/contact/form"
+        }
+    ]
+}

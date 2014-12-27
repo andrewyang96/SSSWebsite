@@ -1,0 +1,26 @@
+{
+	"aboutus": {
+		"file": "./data/navbar/aboutus.json",
+		"title": "About Us"
+	},
+	"rocketmanifest": {
+		"file": "./data/navbar/rocketmanifest.json",
+		"title": "Rocket Manifest"
+	},
+	"departments": {
+		"file": "./data/navbar/departments_navbar.json",
+		"title": "Our Departments"
+	},
+	"contact": {
+		"file": "./data/navbar/contact.json",
+		"title": "Contact Us"
+	},
+	"faq": {
+		"file": "./data/navbar/faq.json",
+		"title": "FAQ"
+	},
+	"media": {
+		"file": "./data/navbar/media.json",
+		"title": "Media"
+	}
+}

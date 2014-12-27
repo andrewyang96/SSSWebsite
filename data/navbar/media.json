@@ -1,0 +1,16 @@
+{
+    "Media": [
+        {
+            "Photos": "/media/photos"
+        },
+        {
+            "Videos": "/media/videos"
+        },
+        {
+            "Social Media": "/media/socialmedia"
+        },
+        {
+            "Newsletter Archive": "/media/newsletters"
+        }
+    ]
+}
