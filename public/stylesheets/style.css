@@ -204,6 +204,11 @@ have a fixed width and height (but it's not required).
 	margin: 20px auto 20px auto;
 }
 
+.wide-row {
+	width: inherit;
+	margin: 20px auto 20px auto;
+}
+
 #logo {
 	height: 80px;
 	width: auto;
@@ -229,7 +234,7 @@ i.icon {
 	margin: 20px auto 20px auto;
 	padding: 12px;
 	clear: both;
-	background-color: #d3d3d3;
+	background-color: #c0c0c0;
 	-webkit-border-radius: 8px;
        -moz-border-radius: 8px;
 	        border-radius: 8px;
@@ -302,7 +307,7 @@ i.icon {
 .footer {
 	width: 1024px;
 	margin: 20px auto 0 auto;
-	background-color: #d3d3d3;
+	background-color: #c0c0c0;
 	padding: 10px;
 }
 
@@ -359,8 +364,36 @@ i.icon {
 .footer-extension {
 	left: 0;
 	width: 100%;
-	background: #d3d3d3;
+	background: #c0c0c0;
 	position: absolute;
 	clear: both;
 	z-index: -9999;
+}
+
+/* Sidenav CSS */
+
+.sidebar {
+	width: 200px;
+	height: inherit;
+	display: inline-block;
+	clear: left;
+	background: #c0c0c0;
+	padding: 0;
+	margin: 20px;
+	position: relative;
+}
+
+.sidebar li {
+	list-style-type: none;
+	border: 2.5px solid black;
+	padding: 5px;
+}
+
+.content {
+	width: 900px;
+	height: inherit;
+	clear: right;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 auto 50px auto;
 }

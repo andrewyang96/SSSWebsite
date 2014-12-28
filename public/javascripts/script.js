@@ -132,5 +132,13 @@ $(document).ready(function () {
 
 	// END JCAROUSEL METHODS
 
+	// SIDENAV AUTOSCROLL
+	$(window).on('scroll', function () {
+		var scrollPos = $(document).scrollTop();
+		$('.sidebar').css({
+		    top: scrollPos
+		});
+		// console.log("scrolled to " + (scrollPos+top));
+	}).scroll();
 	
 });

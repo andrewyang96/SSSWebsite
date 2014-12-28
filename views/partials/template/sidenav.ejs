@@ -1,0 +1,31 @@
+<% var parseList = function (array, firstLevel) { %>
+	<% if (firstLevel) { %>
+		<li id="section"><strong><%= section %></strong></li>
+	<% } %>
+
+	<% array.forEach(function (item) { %>
+		<% if (firstLevel) { %>
+			<li>
+		<% } else { %>
+			<li>&nbsp;&nbsp;&nbsp;&nbsp;
+		<% } %>
+			<% var key = Object.keys(item)[0]; %>
+			<% var value = item[key]; %>
+			<% if (typeof value == "object") { %>
+				<a href="<%- toHref(key) %>"><%= key %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+				<% parseList(value, false) %>
+			<% } else if (typeof value == "string") { %>
+				<a href="<%- value %>"><%= key %></a>
+			<% } %>
+
+		</li>
+
+	<% }); %>
+	
+<% } %>
+
+<ul class="sidebar">
+	<% var section = Object.keys(sideNav)[0] %>
+
+	<%- parseList(sideNav[section], true) %>
+</ul>

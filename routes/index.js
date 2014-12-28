@@ -142,12 +142,23 @@ router.get('/:path?', function (req, res, next) {
 
 	var navbar = getNavbar();
 
-	res.render('detail', {
-		navbar : navbar,
-		sideNav : sideNav,
-		toHref : toHref,
-		title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
-	});
+
+	if (req.params.path == "faq") {
+		res.render('faq', {
+			navbar : navbar,
+			toHref : toHref,
+			title : "Student Space Systems at University of Illinois at Urbana-Champaign | FAQ"
+		});
+	} else {
+		res.render('detail', {
+			navbar : navbar,
+			sideNav : sideNav,
+			toHref : toHref,
+			section : Object.keys(sideNav)[0],
+			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+		});
+	}
+	
 
 	/*
 	fs.readFile("./data/navbar.json", function (err, data) {
