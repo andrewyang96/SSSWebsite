@@ -34,16 +34,6 @@ $(document).ready(function () {
 		setExtensions();
 	};
 
-	// INITIALIZE SEARCH BAR
-	var defaultSearchValue = "Search SSS";
-	$("#search").val(defaultSearchValue);
-
-	$("#search").click(function() {
-		if ($("#search").val() == "Search SSS") {
-			$("#search").val("")
-		}
-	});
-
 	var changeCaption = function (element) {
 		//console.log(element);
 		var comment = element.find('img').attr('alt');
