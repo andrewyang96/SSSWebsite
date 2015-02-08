@@ -16,7 +16,7 @@ a {
 
 /* Format top-level li */
 .jMenu li {
-	padding: 0px 16px 0px 16px; /* Adjust as necessary */
+	padding: 0 16px 0 16px; /* Adjust as necessary */
 	background: black;
 }
 
@@ -88,7 +88,7 @@ have a fixed width and height (but it's not required).
 	width: 1024px; /* WIDTH OF WRAPPER */
 	position: relative;
 	overflow: hidden;
-	margin: 20px auto 20px auto;
+	margin: 0 auto 0 auto;
 }
 
 .jcarousel ul li img {
@@ -201,12 +201,12 @@ have a fixed width and height (but it's not required).
 
 .row {
 	width: 1024px;
-	margin: 20px auto 20px auto;
+	margin: 0 auto 0 auto;
 }
 
 .wide-row {
 	width: inherit;
-	margin: 20px auto 20px auto;
+	margin: 0 auto 0 auto;
 }
 
 #logo {
@@ -231,7 +231,7 @@ i.icon {
 #socialmedia-wrapper {
 	position: relative;
 	width: 1000px;
-	margin: 20px auto 20px auto;
+	margin: 0 auto 20px auto;
 	padding: 12px;
 	clear: both;
 	background-color: #c0c0c0;
@@ -306,7 +306,7 @@ i.icon {
 
 .footer {
 	width: 1024px;
-	margin: 20px auto 0 auto;
+	margin: 0 auto 0 auto;
 	background-color: #c0c0c0;
 	padding: 10px;
 }
@@ -395,5 +395,8 @@ i.icon {
 	clear: right;
 	display: inline-block;
 	vertical-align: top;
-	margin: 0 auto 50px auto;
+	margin: 0 auto 0 auto;
+	border-left: 2px solid grey;
+	padding-left: 20px;
+	padding-bottom: 50px;
 }

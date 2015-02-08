@@ -3,9 +3,9 @@
 		"file": "./data/navbar/aboutus.json",
 		"title": "About Us"
 	},
-	"rocketmanifest": {
-		"file": "./data/navbar/rocketmanifest.json",
-		"title": "Rocket Manifest"
+	"rockets": {
+		"file": "./data/navbar/rockets.json",
+		"title": "Rockets"
 	},
 	"departments": {
 		"file": "./data/navbar/departments_navbar.json",

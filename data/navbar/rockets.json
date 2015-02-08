@@ -1,0 +1,13 @@
+{
+    "Rocket Manifest": [
+        {
+            "Phase I": "/rockets#phaseone"
+        },
+        {
+            "Phase II": "/rockets#phasetwo"
+        },
+        {
+            "Phase III": "/rockets#phasethree"
+        }
+    ]
+}

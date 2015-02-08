@@ -44,15 +44,15 @@
         ]
     },
     {
-        "Rocket Manifest": [
+        "Rockets": [
             {
-                "Phase I": "/rocketmanifest#phaseone"
+                "Phase I": "/rockets#phaseone"
             },
             {
-                "Phase II": "/rocketmanifest#phasetwo"
+                "Phase II": "/rockets#phasetwo"
             },
             {
-                "Phase III": "/rocketmanifest#phasethree"
+                "Phase III": "/rockets#phasethree"
             }
         ]
     },

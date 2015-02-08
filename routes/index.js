@@ -69,7 +69,7 @@ var getNavbar = function (path) {
 	} else {
 		return [
 			JSON.parse(fs.readFileSync("./data/navbar/aboutus.json")),
-			JSON.parse(fs.readFileSync("./data/navbar/rocketmanifest.json")),
+			JSON.parse(fs.readFileSync("./data/navbar/rockets.json")),
 			JSON.parse(fs.readFileSync("./data/navbar/departments_navbar.json")),
 			JSON.parse(fs.readFileSync("./data/navbar/contact.json")),
 			JSON.parse(fs.readFileSync("./data/navbar/faq.json")),
