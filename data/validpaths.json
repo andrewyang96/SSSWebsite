@@ -1,26 +1,8 @@
 {
-	"aboutus": {
-		"file": "./data/navbar/aboutus.json",
-		"title": "About Us"
-	},
-	"rockets": {
-		"file": "./data/navbar/rockets.json",
-		"title": "Rockets"
-	},
-	"departments": {
-		"file": "./data/navbar/departments_navbar.json",
-		"title": "Our Departments"
-	},
-	"contact": {
-		"file": "./data/navbar/contact.json",
-		"title": "Contact Us"
-	},
-	"faq": {
-		"file": "./data/navbar/faq.json",
-		"title": "FAQ"
-	},
-	"media": {
-		"file": "./data/navbar/media.json",
-		"title": "Media"
-	}
+	"aboutus": "About Us",
+	"rockets": "Rockets",
+	"departments": "Departments",
+	"contact": "Contact",
+	"faq": "FAQ",
+	"media": "Media"
 }

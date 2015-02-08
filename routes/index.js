@@ -44,40 +44,13 @@ var toHref = function (str) {
 	return "/" + str.replace(" ", "").toLowerCase();
 };
 
-/**
- * Returns an array of navbar objects.
- * @param {String} path Optional argument.
- * @return {Array} Navbar array to pass to EJS.
- *                 Returns JS object with "navbar" and "title" keys if "path" argument is in validpaths.json.
- *                 Returns null if "path" argument is not in validpaths.json.
- */
-var getNavbar = function (path) {
-	if (path) {
-		var validPaths = JSON.parse(fs.readFileSync("./data/validpaths.json", "UTF-8"));
+var getNavbar = function () {
+	return JSON.parse(fs.readFileSync("./data/navbar.json"));
+};
 
-		if (Object.keys(validPaths).indexOf(path) == -1) {
-			// console.log(path + " is an invalid path");
-			return null;
-		} else {
-			// console.log(path + " is a valid path!");
-			var result = {};
-			result["navbar"] = JSON.parse(fs.readFileSync(validPaths[path]["file"]));
-			result["title"] = validPaths[path]["title"]
-			return result;
-		}
-
-	} else {
-		return [
-			JSON.parse(fs.readFileSync("./data/navbar/aboutus.json")),
-			JSON.parse(fs.readFileSync("./data/navbar/rockets.json")),
-			JSON.parse(fs.readFileSync("./data/navbar/departments_navbar.json")),
-			JSON.parse(fs.readFileSync("./data/navbar/contact.json")),
-			JSON.parse(fs.readFileSync("./data/navbar/faq.json")),
-			JSON.parse(fs.readFileSync("./data/navbar/media.json"))
-		];
-	}
-	
-}
+var getValidPaths = function () {
+	return JSON.parse(fs.readFileSync("./data/validpaths.json"));
+};
 
 /* GET home page. */
 router.get('/', function (req, res) {
@@ -101,46 +74,22 @@ router.get('/', function (req, res) {
 				title : "Student Space Systems at the University of Illinois at Urbana-Champaign"
 			});
 		});
-
-		/*
-		fs.readFile("./data/navbar.json", function (err, data) {
-			if (err) throw err;
-
-			var navbar = JSON.parse(data);
-
-			fs.readFile("./data/gallery.json", function (err, data) {
-				if (err) throw err;
-
-				var gallery = JSON.parse(data);
-
-				res.render('index', {
-					departments : departments,
-					navbar : navbar,
-					gallery : gallery,
-					toHref : toHref,
-					title : "Student Space Systems at the University of Illinois at Urbana-Champaign"
-				});
-			});
-
-			
-		});
-		*/
 		
 	});
 });
 
 /* GET other pages. */
 router.get('/:path?', function (req, res, next) {
-	var sideNavJSON = getNavbar(req.params.path);
 
-	if (sideNavJSON == null) {
-		next(); // if req.params.path isn't valid
-	}
-
-	var sideNav = sideNavJSON["navbar"];
-	var title = sideNavJSON["title"];
+	var validPaths = getValidPaths();
+	var title = getValidPaths()[req.params.path];
 
 	var navbar = getNavbar();
+
+	if (title == undefined) {
+		console.log(req.params.path + " is NOT a valid path");
+		next();
+	}
 
 
 	if (req.params.path == "faq") {
@@ -150,11 +99,12 @@ router.get('/:path?', function (req, res, next) {
 			title : "Student Space Systems at University of Illinois at Urbana-Champaign | FAQ"
 		});
 	} else {
+		var sideNav = navbar[title];
 		res.render('detail', {
 			navbar : navbar,
 			sideNav : sideNav,
 			toHref : toHref,
-			section : Object.keys(sideNav)[0],
+			section : title,
 			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
 		});
 	}

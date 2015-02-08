@@ -1,122 +1,156 @@
-[
-    {
-        "About Us": [
-            {
-                "Mission Statement": "/aboutus/mission"
-            },
-            {
-                "Goals - Vision 2024": "/aboutus/goals"
-            },
-            {
-                "Timeline": "/aboutus/timeline"
-            },
-            {
-                "Executive Board": "/aboutus/execboard"
-            },
-            {
-                "How We Started": "/aboutus/origins"
-            },
-            {
-                "Why We're Different": "/aboutus/weareunique"
-            },
-            {
-                "Inspirations": "/aboutus/inspirations"
-            },
-            {
-                "Bylaws": "/aboutus/bylaws"
-            },
-            {
-                "Articles": "/aboutus/articles"
-            },
-            {
-                "Obstacles": [
-                    {
-                        "Budgetary": "/aboutus/obstacles/budgetary"
-                    },
-                    {
-                        "Technology": "/aboutus/obstacles/technology"
-                    },
-                    {
-                        "Expertise": "/aboutus/obstacles/expertise"
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        "Rockets": [
-            {
-                "Phase I": "/rockets#phaseone"
-            },
-            {
-                "Phase II": "/rockets#phasetwo"
-            },
-            {
-                "Phase III": "/rockets#phasethree"
-            }
-        ]
-    },
-    {
-        "Departments": [
-            {
-                "Avionics": "/departments/avionics"
-            },
-            {
-                "Launch Systems": "/departments/launchsystems"
-            },
-            {
-                "Outreach": "/departments/outreach"
-            },
-            {
-                "Propulsion": "/departments/propulsion"
-            },
-            {
-                "Safety": "/departments/safety"
-            },
-            {
-                "Special Projects": "/departments/specialprojects"
-            },
-            {
-                "Structures": "/departments/structures"
-            }
-        ]
-    },
-    {
-        "Contact": [
-            {
-                "Sponsorship": "http://sab.ae.illinois.edu/sponsorship.php"
-            },
-            {
-                "Support Us": "/contact/supportus"
-            },
-            {
-                "Prospective Students": "/contact/prospective"
-            },
-            {
-                "Merchandise": "/contact/merch"
-            },
-            {
-                "Contact Form": "/contact/form"
-            }
-        ]
-    },
-    {
-        "FAQ": "/faq"
-    },
-    {
-        "Media": [
-            {
-                "Photos": "/media/photos"
-            },
-            {
-                "Videos": "/media/videos"
-            },
-            {
-                "Social Media": "/media/socialmedia"
-            },
-            {
-                "Newsletter Archive": "/media/newsletters"
-            }
-        ]
+{
+  "About Us": {
+    "uri": "/aboutus",
+    "children": {
+      "Mission Statement": {
+        "uri": "/aboutus/statement",
+        "children": {}
+      },
+      "Goals - Vision 2024": {
+        "uri": "/aboutus/goals",
+        "children": {}
+      },
+      "Timeline": {
+        "uri": "/aboutus/timeline",
+        "children": {}
+      },
+      "Executive Board": {
+        "uri": "/aboutus/execboard",
+        "children": {}
+      },
+      "How We Started": {
+        "uri": "/aboutus/origins",
+        "children": {}
+      },
+      "Why We're Different": {
+        "uri": "/aboutus/different",
+        "children": {}
+      },
+      "Inspirations": {
+        "uri": "/aboutus/inspirations",
+        "children": {}
+      },
+      "Bylaws": {
+        "uri": "/aboutus/bylaws",
+        "children": {}
+      },
+      "Obstacles": {
+        "uri": "/aboutus/obstacles",
+        "children": {
+          "Budgetary": {
+            "uri": "/aboutus/obstacles/budgetary",
+            "children": {}
+          },
+          "Technology": {
+            "uri": "/aboutus/obstacles/technology",
+            "children": {}
+          },
+          "Expertise": {
+            "uri": "/aboutus/obstacles/expertise",
+            "children": {}
+          }
+        }
+      }
     }
-]
+  },
+  "Rockets": {
+    "uri": "/rockets",
+    "children": {
+      "Phase I": {
+        "uri": "/rockets#phaseone",
+        "children": {}
+      },
+      "Phase II": {
+        "uri": "/rockets#phasetwo",
+        "children": {}
+      },
+      "Phase III": {
+        "uri": "/rockets#phasethree",
+        "children": {}
+      }
+    }
+  },
+  "Departments": {
+    "uri": "/departments",
+    "children": {
+      "Avionics": {
+        "uri": "/departments/avionics",
+        "children": {}
+      },
+      "Launch Systems": {
+        "uri": "/departments/launchsystems",
+        "children": {}
+      },
+      "Outreach": {
+        "uri": "/departments/outreach",
+        "children": {}
+      },
+      "Propulsion": {
+        "uri": "/departments/propulsion",
+        "children": {}
+      },
+      "Safety": {
+        "uri": "/departments/safety",
+        "children": {}
+      },
+      "Special Projects": {
+        "uri": "/departments/specialprojects",
+        "children": {}
+      },
+      "Structures": {
+        "uri": "/departments/structures",
+        "children": {}
+      }
+    }
+  },
+  "Contact": {
+    "uri": "/contact",
+    "children": {
+      "Sponsorship": {
+        "uri": "http://sab.ae.illinois.edu/sponsorship.php",
+        "children": {}
+      },
+      "Support Us": {
+        "uri": "/contact/supportus",
+        "children": {}
+      },
+      "Prospective Students": {
+        "uri": "/contact/prospective",
+        "children": {}
+      },
+      "Merchandise": {
+        "uri": "/contact/merch",
+        "children": {}
+      },
+      "Contact Form": {
+        "uri": "/contact/form",
+        "children": {}
+      }
+    }
+  },
+  "FAQ": {
+    "uri": "/faq",
+    "children": {}
+  },
+  "Media": {
+    "uri": "/media",
+    "children": {
+      "Photos": {
+        "uri": "/media/photos",
+        "children": {}
+      },
+      "Videos": {
+        "uri": "/media/videos",
+        "children": {}
+      },
+      "Social Media": {
+        "uri": "/media/socialmedia",
+        "children": {}
+      },
+      "Newsletter Archive": {
+        "uri": "/media/newsletters",
+        "children": {}
+      }
+    }
+  }
+}
