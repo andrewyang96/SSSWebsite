@@ -373,24 +373,48 @@ i.icon {
 /* Sidenav CSS */
 
 .sidebar {
-	width: 200px;
+	width: 175px;
 	height: inherit;
 	display: inline-block;
 	clear: left;
-	background: #c0c0c0;
+	background: inherit;
 	padding: 0;
-	margin: 20px;
+	margin: 10px 0 0 0;
 	position: relative;
 }
 
 .sidebar li {
 	list-style-type: none;
-	border: 2.5px solid black;
 	padding: 5px;
 }
 
+/* Target Firefox to shrink sidebar */
+
+@-moz-document url-prefix() {
+    .sidebar {
+        font-size: 14px;
+        margin: 5px 0 0 0;
+    }
+
+    .sidebar li {
+    	padding: 2px 2px 2px 20px;
+    }
+
+    .content {
+    	font-size: 14px;
+    }
+}
+
+/* Target IE 10+ to shrink sidebar */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .sidebar li {
+    	padding: 3px 3px 3px 0;
+    }
+}
+
 .content {
-	width: 900px;
+	width: 925px;
 	height: inherit;
 	clear: right;
 	display: inline-block;

@@ -6,7 +6,7 @@ $(document).ready(function () {
 	var setExtensions = function () {
 		// debugExtensions();
 		$(".navbar-extension").css({top : ($("#navbar").position().top + parseInt($("#navbar").css("margin-top"))) + "px"});
-		$(".navbar-extension").height($("#navbar").outerHeight());
+		$(".navbar-extension").height($("#navbar").outerHeight()+1); // misaligned in firefox, yet remains aligned in chrome
 		$(".footer-extension").css({top : ($("#footer").position().top + parseInt($("#footer").css("margin-top"))) + "px"});
 		$(".footer-extension").height($("#footer").outerHeight());
 	};
@@ -124,9 +124,13 @@ $(document).ready(function () {
 
 	// SIDENAV AUTOSCROLL
 	$(window).on('scroll', function () {
+		// console.log("Offset:");
+		// console.log($('.sidebar').offset());
 		var scrollPos = $(document).scrollTop();
+		// console.log("ScrollTop:");
+		// console.log(scrollPos);
 		$('.sidebar').css({
-		    top: scrollPos
+		    top : scrollPos
 		});
 		// console.log("scrolled to " + (scrollPos+top));
 	}).scroll();
