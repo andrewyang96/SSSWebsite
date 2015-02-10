@@ -2,8 +2,21 @@ body {
 	font: Georgia, serif;
 }
 
-a {
+a:link {
 	text-decoration: none;
+	color: #21409a;
+}
+
+a:visited {
+	color: #21409a;
+}
+
+a:hover {
+	color: blue;
+}
+
+a:active {
+	color: blue;
 }
 
 /*=== Begin navbar CSS ===*/
@@ -51,10 +64,11 @@ Position must be relative!
 .jcarousel {
     position: relative;
     overflow: hidden;
-
+	/*
     webkit-border-radius: 20px;
       -moz-border-radius: 20px;
 	       border-radius: 20px;
+	*/
 }
 
 /*
@@ -235,9 +249,11 @@ i.icon {
 	padding: 12px;
 	clear: both;
 	background-color: #c0c0c0;
-	-webkit-border-radius: 8px;
-       -moz-border-radius: 8px;
-	        border-radius: 8px;
+	
+	-webkit-border-radius: 0 0 8px 8px;
+       -moz-border-radius: 0 0 8px 8px;
+	        border-radius: 0 0 8px 8px;
+	
 }
 
 #socialmedia-wrapper li {
