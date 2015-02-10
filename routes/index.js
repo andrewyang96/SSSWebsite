@@ -35,21 +35,8 @@ var getValues = function (obj, keys) {
 	return result;
 };
 
-/**
- * Converts string to convenient href value.
- * @param  {String} str Any string.
- * @return {String} A value suitable for href attribute of <a> tag.
- */
-var toHref = function (str) {
-	return "/" + str.replace(" ", "").toLowerCase();
-};
-
 var getNavbar = function () {
 	return JSON.parse(fs.readFileSync("./data/navbar.json"));
-};
-
-var getValidPaths = function () {
-	return JSON.parse(fs.readFileSync("./data/validpaths.json"));
 };
 
 /* GET home page. */
@@ -70,7 +57,6 @@ router.get('/', function (req, res) {
 				departments : departments,
 				navbar : navbar,
 				gallery : gallery,
-				toHref : toHref,
 				title : "Student Space Systems at the University of Illinois at Urbana-Champaign"
 			});
 		});
@@ -80,57 +66,57 @@ router.get('/', function (req, res) {
 
 /* GET other pages. */
 router.get('/:path?', function (req, res, next) {
-
-	var validPaths = getValidPaths();
-	var title = getValidPaths()[req.params.path];
-
 	var navbar = getNavbar();
+	var sideNav = navbar[req.params.path];
 
-	if (title == undefined) {
+	if (sideNav === undefined) {
 		console.log(req.params.path + " is NOT a valid path");
 		next();
 	}
 
+	var title = sideNav['title'];
 
 	if (req.params.path == "faq") {
 		res.render('faq', {
 			navbar : navbar,
-			toHref : toHref,
 			title : "Student Space Systems at University of Illinois at Urbana-Champaign | FAQ"
 		});
 	} else {
-		var sideNav = navbar[title];
 		res.render('detail', {
 			navbar : navbar,
 			sideNav : sideNav,
-			toHref : toHref,
+			currentPage : "/" + req.params.path,
 			section : title,
 			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
 		});
 	}
-	
 
-	/*
-	fs.readFile("./data/navbar.json", function (err, data) {
-		if (err) throw err;
+});
 
-		var navbar = JSON.parse(data);
+router.get('/:path?/:subpath?', function (req, res, next) {
+	var navbar = getNavbar();
+	var sideNav = navbar[req.params.path];
 
-		fs.readFile("./data/gallery.json", function (err, data) {
-			if (err) throw err;
+	if (sideNav === undefined) {
+		console.log(req.params.path + " is NOT a valid path");
+		next();
+	} else {
+		var subpage = sideNav['children'][req.params.subpath];
+		if (subpage === undefined) {
+			console.log(req.params.path + "/" + req.params.subpath + " is NOT a valid path");
+			next();
+		}
+	}
 
-			var gallery = JSON.parse(data);
+	var title = subpage['title'];
 
-			res.render('detail', {
-				navbar : navbar,
-				title : "Student Space Systems at the University of Illinois at Urbana-Champaign"
-			});
-		});
-
-		
+	res.render('subpage', {
+		navbar : navbar,
+		sideNav : sideNav,
+		currentPage : "/" + req.params.path + "/" + req.params.subpath,
+		section : title,
+		title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
 	});
-	*/
-
 });
 
 

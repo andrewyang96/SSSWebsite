@@ -1,154 +1,154 @@
 {
-  "About Us": {
-    "uri": "/aboutus",
+  "aboutus": {
+    "title": "About Us",
     "children": {
-      "Mission Statement": {
-        "uri": "/aboutus/statement",
+      "statement": {
+        "title": "Mission Statement",
         "children": {}
       },
-      "Goals - Vision 2024": {
-        "uri": "/aboutus/goals",
+      "goals": {
+        "title": "Goals - Vision 2024",
         "children": {}
       },
-      "Timeline": {
-        "uri": "/aboutus/timeline",
+      "timeline": {
+        "title": "Timeline",
         "children": {}
       },
-      "Executive Board": {
-        "uri": "/aboutus/execboard",
+      "execboard": {
+        "title": "Executive Board",
         "children": {}
       },
-      "How We Started": {
-        "uri": "/aboutus/origins",
+      "origins": {
+        "title": "How We Started",
         "children": {}
       },
-      "Why We're Different": {
-        "uri": "/aboutus/different",
+      "different": {
+        "title": "Why We're Different",
         "children": {}
       },
-      "Inspirations": {
-        "uri": "/aboutus/inspirations",
+      "inspirations": {
+        "title": "Inspirations",
         "children": {}
       },
-      "Bylaws": {
-        "uri": "/aboutus/bylaws",
+      "bylaws": {
+        "title": "Bylaws",
         "children": {}
       },
-      "Obstacles": {
-        "uri": "/aboutus/obstacles",
+      "obstacles": {
+        "title": "Obstacles",
         "children": {
-          "Budgetary": {
-            "uri": "/aboutus/obstacles/budgetary",
+          "budgetary": {
+            "title": "Budgetary",
             "children": {}
           },
-          "Technology": {
-            "uri": "/aboutus/obstacles/technology",
+          "technology": {
+            "title": "Technology",
             "children": {}
           },
-          "Expertise": {
-            "uri": "/aboutus/obstacles/expertise",
+          "expertise": {
+            "title": "Expertise",
             "children": {}
           }
         }
       }
     }
   },
-  "Rockets": {
-    "uri": "/rockets",
+  "rockets": {
+    "title": "Rockets",
     "children": {
-      "Phase I": {
-        "uri": "/rockets#phaseone",
+      "phaseone": {
+        "title": "Phase I",
         "children": {}
       },
-      "Phase II": {
-        "uri": "/rockets#phasetwo",
+      "phasetwo": {
+        "title": "Phase II",
         "children": {}
       },
-      "Phase III": {
-        "uri": "/rockets#phasethree",
+      "phasethree": {
+        "title": "Phase III",
         "children": {}
       }
     }
   },
-  "Departments": {
-    "uri": "/departments",
+  "departments": {
+    "title": "Departments",
     "children": {
-      "Avionics": {
-        "uri": "/departments/avionics",
+      "avionics": {
+        "title": "Avionics",
         "children": {}
       },
-      "Launch Systems": {
-        "uri": "/departments/launchsystems",
+      "launchsystems": {
+        "title": "Launch Systems",
         "children": {}
       },
-      "Outreach": {
-        "uri": "/departments/outreach",
+      "outreach": {
+        "title": "Outreach",
         "children": {}
       },
-      "Propulsion": {
-        "uri": "/departments/propulsion",
+      "propulsion": {
+        "title": "Propulsion",
         "children": {}
       },
-      "Safety": {
-        "uri": "/departments/safety",
+      "safety": {
+        "title": "Safety",
         "children": {}
       },
-      "Special Projects": {
-        "uri": "/departments/specialprojects",
+      "specialprojects": {
+        "title": "Special Projects",
         "children": {}
       },
-      "Structures": {
-        "uri": "/departments/structures",
+      "structures": {
+        "title": "Structures",
         "children": {}
       }
     }
   },
-  "Contact": {
-    "uri": "/contact",
+  "contact": {
+    "title": "Contact",
     "children": {
-      "Sponsorship": {
-        "uri": "http://sab.ae.illinois.edu/sponsorship.php",
+      "sponsorship": {
+        "title": "Sponsorship",
         "children": {}
       },
-      "Support Us": {
-        "uri": "/contact/supportus",
+      "supportus": {
+        "title": "Support Us",
         "children": {}
       },
-      "Prospective Students": {
-        "uri": "/contact/prospective",
+      "prospective": {
+        "title": "Prospective Students",
         "children": {}
       },
-      "Merchandise": {
-        "uri": "/contact/merch",
+      "merch": {
+        "title": "Merchandise",
         "children": {}
       },
-      "Contact Form": {
-        "uri": "/contact/form",
+      "form": {
+        "title": "Contact Form",
         "children": {}
       }
     }
   },
-  "FAQ": {
-    "uri": "/faq",
+  "faq": {
+    "title": "FAQ",
     "children": {}
   },
-  "Media": {
-    "uri": "/media",
+  "media": {
+    "title": "Media",
     "children": {
-      "Photos": {
-        "uri": "/media/photos",
+      "photos": {
+        "title": "Photos",
         "children": {}
       },
-      "Videos": {
-        "uri": "/media/videos",
+      "videos": {
+        "title": "Videos",
         "children": {}
       },
-      "Social Media": {
-        "uri": "/media/socialmedia",
+      "socialmedia": {
+        "title": "Social Media",
         "children": {}
       },
-      "Newsletter Archive": {
-        "uri": "/media/newsletters",
+      "newsletters": {
+        "title": "Newsletter Archive",
         "children": {}
       }
     }

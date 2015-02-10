@@ -1,16 +1,16 @@
-<% var parseList = function (json, firstLevel) { %>
-	<% if (firstLevel) { %>
+<% var parseList = function (json, prefix) { %>
+	<% if (prefix === currentPage) { %>
 		<li id="section"><strong><%= section %></strong></li>
 		<% Object.keys(json).forEach(function (item) { %>
 			<li>
 				<% var itemobj = json[item]; %>
 				<% // console.log(itemobj); %>
 				<% if (Object.keys(itemobj['children']).length > 0) { %>
-					<a href="<%= itemobj['uri'] %>"><%= item %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
-					<% // console.log("recursive call from 1st level"); %>
-					<% parseList(itemobj['children'], false) %>
+					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% // console.log("recursive call from 1st level: " + (prefix + '/' + item)); %>
+					<% parseList(itemobj['children'], prefix + "/" + item) %>
 				<% } else { %>
-					<a href="<%= itemobj['uri'] %>"><%= item %></a>
+					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
 				<% } %>
 			</li>
 		<% }); %>
@@ -20,11 +20,11 @@
 				<% var itemobj = json[item]; %>
 				<% // console.log(itemobj); %>
 				<% if (Object.keys(itemobj['children']).length > 0) { %>
-					<a href="<%= itemobj['uri'] %>"><%= item %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
-					<% // console.log("recursive call"); %>
-					<% parseList(itemobj['children'], false) %>
+					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% // console.log("recursive call: " + (prefix + '/' + item)); %>
+					<% parseList(itemobj['children'], prefix + "/" + item) %>
 				<% } else { %>
-					<a href="<%= itemobj['uri'] %>"><%= item %></a>
+					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
 				<% } %>
 			</li>
 		<% }); %>
@@ -33,5 +33,5 @@
 <% } %>
 
 <ul class="sidebar">
-	<% parseList(sideNav['children'], true) %>
+	<% parseList(sideNav['children'], currentPage) %>
 </ul>
