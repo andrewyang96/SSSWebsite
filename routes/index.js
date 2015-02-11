@@ -75,6 +75,7 @@ router.get('/:path?', function (req, res, next) {
 	}
 
 	var title = sideNav['title'];
+	var sideNavTitle = title;
 
 	if (req.params.path == "faq") {
 		res.render('faq', {
@@ -85,6 +86,7 @@ router.get('/:path?', function (req, res, next) {
 		res.render('detail', {
 			navbar : navbar,
 			sideNav : sideNav,
+			sideNavTitle : sideNavTitle,
 			currentPage : "/" + req.params.path,
 			section : title,
 			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
@@ -109,11 +111,13 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 	}
 
 	var title = subpage['title'];
+	var sideNavTitle = sideNav['title'];
 
 	res.render('subpage', {
 		navbar : navbar,
 		sideNav : sideNav,
-		currentPage : "/" + req.params.path + "/" + req.params.subpath,
+		sideNavTitle : sideNavTitle,
+		currentPage : "/" + req.params.path,
 		section : title,
 		title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
 	});

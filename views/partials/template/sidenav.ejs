@@ -1,16 +1,24 @@
 <% var parseList = function (json, prefix) { %>
 	<% if (prefix === currentPage) { %>
-		<li id="section"><strong><%= section %></strong></li>
+		<li id="section"><strong><%= sideNavTitle %></strong></li>
 		<% Object.keys(json).forEach(function (item) { %>
 			<li>
 				<% var itemobj = json[item]; %>
 				<% // console.log(itemobj); %>
 				<% if (Object.keys(itemobj['children']).length > 0) { %>
-					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% if (section == itemobj['title']) { %>
+						<a><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% } else { %>
+						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% } %>
 					<% // console.log("recursive call from 1st level: " + (prefix + '/' + item)); %>
 					<% parseList(itemobj['children'], prefix + "/" + item) %>
 				<% } else { %>
-					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
+					<% if (section == itemobj['title']) { %>
+						<a><%= itemobj['title'] %></a>
+					<% } else { %>
+						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
+					<% } %>
 				<% } %>
 			</li>
 		<% }); %>
@@ -20,11 +28,19 @@
 				<% var itemobj = json[item]; %>
 				<% // console.log(itemobj); %>
 				<% if (Object.keys(itemobj['children']).length > 0) { %>
-					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% if (section == itemobj['title']) { %>
+						<a><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% } else { %>
+						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
+					<% } %>
 					<% // console.log("recursive call: " + (prefix + '/' + item)); %>
 					<% parseList(itemobj['children'], prefix + "/" + item) %>
 				<% } else { %>
-					<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
+					<% if (section == itemobj['title']) { %>
+						<a><%= itemobj['title'] %></a>
+					<% } else { %>
+						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
+					<% } %>
 				<% } %>
 			</li>
 		<% }); %>
