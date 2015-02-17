@@ -78,10 +78,17 @@ router.get('/:path?', function (req, res, next) {
 	var sideNavTitle = title;
 
 	if (req.params.path == "faq") {
-		res.render('faq', {
-			navbar : navbar,
-			title : "Student Space Systems at University of Illinois at Urbana-Champaign | FAQ"
+		fs.readFile("./data/faq.json", function (err, data) {
+			if (err) throw err;
+
+			var faq = JSON.parse(data);
+			res.render('faq', {
+				navbar : navbar,
+				faq : faq,
+				title : "Student Space Systems at University of Illinois at Urbana-Champaign | FAQ"
+			});
 		});
+		
 	} else {
 		res.render('detail', {
 			navbar : navbar,
