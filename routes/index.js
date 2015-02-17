@@ -123,5 +123,38 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 	});
 });
 
+router.get('/:path?/:subpath?/:subpath2?', function (req, res, next) {
+	var navbar = getNavbar();
+	var sideNav = navbar[req.params.path];
+
+	if (sideNav === undefined) {
+		console.log(req.params.path + " is NOT a valid path");
+		next();
+	} else {
+		var subpage = sideNav['children'][req.params.subpath];
+		if (subpage === undefined) {
+			console.log(req.params.path + "/" + req.params.subpath + " is NOT a valid path");
+			next();
+		} else {
+			if (!(req.params.subpath2 in subpage['children'])) {
+				console.log(req.params.path + "/" + req.params.subpath + "/" + req.params.subpath2 + " is NOT a valid path");
+				next();
+			}
+		}
+	}
+
+	var title = subpage['children'][req.params.subpath2]['title'];
+	var sideNavTitle = sideNav['title'];
+
+	res.render('subpage', {
+		navbar: navbar,
+		sideNav : sideNav,
+		sideNavTitle : sideNavTitle,
+		currentPage : "/" + req.params.path,
+		section : title,
+		title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+	});
+});
+
 
 module.exports = router;
