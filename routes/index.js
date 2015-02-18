@@ -28,6 +28,16 @@ var getNavbar = function () {
 
 /* GET home page. */
 router.get('/', function (req, res) {
+	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
+	if (req.query['search']) {
+		var searchQuery = req.query['search'];
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery + "+site:studentspacesystems.webs.com";
+		console.log("Redirecting to " + searchRedirectURL);
+		res.writeHead(301, {Location: searchRedirectURL});
+		res.end();
+		return;
+	}
+
 	fs.readFile("./data/departments.json", function (err, data) {
 		if (err) throw err;
 
@@ -53,6 +63,16 @@ router.get('/', function (req, res) {
 
 /* GET other pages. */
 router.get('/:path?', function (req, res, next) {
+	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
+	if (req.query['search']) {
+		var searchQuery = req.query['search'];
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery;
+		console.log("Redirecting to " + searchRedirectURL);
+		res.writeHead(301, {Location: searchRedirectURL});
+		res.end();
+		return;
+	}
+
 	var navbar = getNavbar();
 	var sideNav = navbar[req.params.path];
 
@@ -90,6 +110,16 @@ router.get('/:path?', function (req, res, next) {
 });
 
 router.get('/:path?/:subpath?', function (req, res, next) {
+	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
+	if (req.query['search']) {
+		var searchQuery = req.query['search'];
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery;
+		console.log("Redirecting to " + searchRedirectURL);
+		res.writeHead(301, {Location: searchRedirectURL});
+		res.end();
+		return;
+	}
+
 	var navbar = getNavbar();
 	var sideNav = navbar[req.params.path];
 
@@ -118,6 +148,16 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 });
 
 router.get('/:path?/:subpath?/:subpath2?', function (req, res, next) {
+	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
+	if (req.query['search']) {
+		var searchQuery = req.query['search'];
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery;
+		console.log("Redirecting to " + searchRedirectURL);
+		res.writeHead(301, {Location: searchRedirectURL});
+		res.end();
+		return;
+	}
+
 	var navbar = getNavbar();
 	var sideNav = navbar[req.params.path];
 

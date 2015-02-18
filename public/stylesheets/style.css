@@ -224,7 +224,7 @@ have a fixed width and height (but it's not required).
 }
 
 #logo {
-	height: 80px;
+	height: 100px;
 	width: auto;
 	clear: left;
 	margin: 0;
