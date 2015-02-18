@@ -2,25 +2,17 @@
 <div id="#departmentsection-wrapper">
 	<strong class="title">DEPARTMENTS</strong>
 
-	<% for (var row in departments) { %>
+	<% departments.forEach(function (row) { %>
 		<ul class="tr">
-
-			<% var row = departments[row]; %>
-			<% for (var department in row) { %>
-				<% if (row.hasOwnProperty(department)) { %>
-
-					<li class="department">
-						<img src="<%= row[department].img %>" alt="<%= department %>" class="departmenticon">
-						<strong><%= department %></strong>
-						<%- row[department].text %>
-					</li>
-
-				<% } %>
-				
-			<% } %>
-
+			<% row.forEach(function (department) { %>
+				<li class="department">
+					<img src="<%= department['img'] %>" alt="<%= department['name'] %>" class="departmenticon">
+					<strong><%= department['name'] %></strong>
+					<%- department['html'] %>
+				</li>
+			<% }); %>
 		</ul>
-	<% } %>
+	<% }); %>
 	
 </div>
 <!-- End departments section -->

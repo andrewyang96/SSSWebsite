@@ -5,33 +5,20 @@ var fs = require('fs');
 /* Useful functions */
 
 /**
- * Splices JSON into an array of JSONs.
- * @param {Object} obj JSON Object to be processed.
+ * Splices array into an array of arrays.
+ * @param {Array} arr JSON Object to be processed.
  * @param {Number} chunkSize The size of each chunk.
- * @return {Array} An array of chunks, each of size chunkSize.
+ * @return {Array} An array of chunks, each of length chunkSize.
  */
-var spliceJSON = function (obj, chunkSize) {
-	
+var spliceArray = function (arr, chunkSize) {
 	var result = [];
-	var keys = Object.keys(obj);
-	while (keys.length > 0) {
-		var chunk = getValues(obj, keys.splice(0,chunkSize));
-		result.push(chunk);
-	}
-	return result;
-};
-
-/**
- * Gets the values of an array of keys.
- * @param  {Object} obj JSON Object to be processed.
- * @param  {Array} keys The keys. Ensure that they exist in obj.
- * @return {Object} JSON Object whose keys are in the keys param.
- */
-var getValues = function (obj, keys) {
-	var result = {};
-	for (key in keys) {
-		result[keys[key]] = obj[keys[key]];
-	}
+	var i = 0;
+	var chunk = [];
+	do {
+		chunk = arr.slice(i*chunkSize, (i+1)*chunkSize);
+		i += 1;
+		if (chunk.length > 0) result.push(chunk);
+	} while (chunk.length > 0);
 	return result;
 };
 
@@ -44,7 +31,7 @@ router.get('/', function (req, res) {
 	fs.readFile("./data/departments.json", function (err, data) {
 		if (err) throw err;
 
-		var departments = spliceJSON(JSON.parse(data), 3);
+		var departments = spliceArray(JSON.parse(data), 3);
 
 		var navbar = getNavbar();
 
