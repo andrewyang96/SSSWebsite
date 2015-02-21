@@ -1,14 +1,16 @@
 <div class="content">
 	<h1><%= section %></h1>
 
-	<!-- TODO: replace with actual content -->
+	<% if (currentPage == "/aboutus") { %>
+		<%- include aboutus-branch.ejs %>
+	<% } else if (currentPage == "/rockets") { %>
+		<%- include rockets-branch.ejs %>
+	<% } else if (currentPage == "/departments") { %>
+		<%- include departments-branch.ejs %>
+	<% } else if (currentPage == "/contact") { %>
+		<%- include contact-branch.ejs %>
+	<% } else if (currentPage == "/media") { %>
+		<%- include media-branch.ejs %>
+	<% } %>
 
-	<%- include loremipsum.ejs %>
-	<%- include loremipsum.ejs %>
-	<%- include loremipsum.ejs %>
-	<%- include loremipsum.ejs %>
-	<%- include loremipsum.ejs %>
-	<%- include loremipsum.ejs %>
-	<%- include loremipsum.ejs %>
-	<%- include loremipsum.ejs %>
 </div>
