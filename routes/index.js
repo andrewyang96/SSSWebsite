@@ -138,14 +138,21 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 	var title = subpage['title'];
 	var sideNavTitle = sideNav['title'];
 
-	res.render('subpage', {
-		navbar : navbar,
-		sideNav : sideNav,
-		sideNavTitle : sideNavTitle,
-		currentPage : "/" + req.params.path,
-		section : title,
-		ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
-		title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+	fs.readFile("./data/execboard.json", function (err, data) {
+		if (err) throw err;
+		
+		var execBoard = JSON.parse(data);
+
+		res.render('subpage', {
+			execBoard : execBoard,
+			navbar : navbar,
+			sideNav : sideNav,
+			sideNavTitle : sideNavTitle,
+			currentPage : "/" + req.params.path,
+			section : title,
+			ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
+			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+		});
 	});
 });
 

@@ -1,27 +1,27 @@
 [
   {
-    "title": "Canterbury",
-    "caption": "Beautiful sunset in New Zealand. <a href='https://www.google.com'>Link to Google</a>",
-    "src": "/images/image1.jpg"
+    "title": "Sierra Launch",
+    "caption": "On December 13, 2014, we launched our Sierra rocket.",
+    "src": "/images/gallery/sierra_launch.jpg"
   },
   {
-    "title": "Himalayas",
-    "caption": "Doge sitting on a peak in the Himalayas.",
-    "src": "/images/image2.jpg"
+    "title": "Ed Out",
+    "caption": "On November 9, 2014, we hosted an Ed Out workshop aiming to teach children about aeronautics.",
+    "src": "/images/gallery/ed_out.jpg"
   },
   {
-    "title": "Denali State Park",
-    "caption": "A large state park in Alaska.",
-    "src": "/images/image3.jpg"
+    "title": "Quad Day",
+    "caption": "On August 24, 2014, Student Space Systems hosted a booth at the annual Quad Day.",
+    "src": "/images/gallery/quad_day.jpg"
   },
   {
-    "title": "<a href='http://www.reddit.com/r/earthporn'>Desktop Background</a>",
-    "caption": "The dimensions of this image is exactly 1024 by 768, making for an aspect ratio of 4:3.",
-    "src": "/images/image_reference.jpg"
+    "title": "What We Do",
+    "caption": "<a href='/aboutus/statement'>So what does Student Space Systems do?</a>",
+    "src": "/images/gallery/what_we_do.jpg"
   },
   {
-    "title": "Great Wall of China",
-    "caption": "The Great Wall on a clear day.",
-    "src": "/images/image5.jpg"
+    "title": "Vision",
+    "caption": "<a href='/aboutus/goals/'>Our plan for the next decade.</a>",
+    "src": "/images/gallery/vision.jpg"
   }
 ]
