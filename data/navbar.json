@@ -28,20 +28,7 @@
       },
       "obstacles": {
         "title": "Obstacles",
-        "children": {
-          "budgetary": {
-            "title": "Budgetary",
-            "children": {}
-          },
-          "technology": {
-            "title": "Technology",
-            "children": {}
-          },
-          "expertise": {
-            "title": "Expertise",
-            "children": {}
-          }
-        }
+        "children": {}
       }
     }
   },
@@ -96,7 +83,7 @@
     }
   },
   "contact": {
-    "title": "Contact",
+    "title": "Contact Us",
     "children": {
       "sponsorship": {
         "title": "Sponsorship",
@@ -140,7 +127,7 @@
         "children": {}
       },
       "newsletters": {
-        "title": "Newsletter Archive",
+        "title": "Newsletters",
         "children": {}
       }
     }

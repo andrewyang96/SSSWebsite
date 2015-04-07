@@ -31,7 +31,7 @@ router.get('/', function (req, res) {
 	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
 	if (req.query['search']) {
 		var searchQuery = req.query['search'];
-		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery + "+site:studentspacesystems.webs.com";
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery + "+site:sss.ae.illinois.edu";
 		console.log("Redirecting to " + searchRedirectURL);
 		res.writeHead(301, {Location: searchRedirectURL});
 		res.end();
