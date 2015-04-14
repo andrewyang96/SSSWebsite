@@ -2,31 +2,37 @@
   {
     "name": "Avionics",
     "html": "<p>The Department of Avionics is responsible for producing all of the electronics packages for our main rockets. Their packages will record flight data, take video, control our rockets, and more.</p>",
-    "img": "./images/departments/avionics.png"
+    "img": "./images/departments/avionics.png",
+    "url": "/departments/avionics"
   },
   {
     "name": "Structures",
     "html": "<p>The Department of Structures controls the bones of each rocket we build. They conduct testing to ensure each component fits precisely to specification and can meet the stresses of the intended flight.</p>",
-    "img": "./images/departments/website_icons.png"
+    "img": "./images/departments/website_icons.png",
+    "url": "/departments/structures"
   },
   {
     "name": "Propulsion",
     "html": "<p>The Department of Propulsion oversees everything involving the booster stage of our rockets. This often involves ground testing, experimental prototyping, and full design of the engines on most of our systems.</p>",
-    "img": "./images/departments/propulsion.png"
+    "img": "./images/departments/propulsion.png",
+    "url": "/departments/propulsion"
   },
   {
     "name": "Launch Systems",
     "html": "<p>The Department of Launch Systems takes over when the other departments' jobs end. They manage storage, transportation, and launch operations.</p>",
-    "img": "./images/departments/launch_systems.png"
+    "img": "./images/departments/launch_systems.png",
+    "url": "/departments/launchsystems"
   },
   {
     "name": "Outreach",
     "html": "<p>We recognize, like many other organization, that our biggest legacy will be in those we inspire by our work. Our Outreach program will be the vessel by which this is made in the years to come through activities with youth and visits to local schools.</p>",
-    "img": "./images/departments/outreach.png"
+    "img": "./images/departments/outreach.png",
+    "url": "/departments/outreach"
   },
   {
     "name": "Special Projects",
     "html": "<p>The Department of Special Projects has two purposes. First off, they develop and test far out technologies for us to use in the future. Second, they manage projects like our Level One Certification Program and our Space Grant teams that just do not have any other home.</p>",
-    "img": "./images/departments/special_projects.png"
+    "img": "./images/departments/special_projects.png",
+    "url": "/departments/specialprojects"
   }
 ]

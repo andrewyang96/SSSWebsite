@@ -324,7 +324,11 @@ i.icon {
 	width: 1024px;
 	margin: 20px auto 0 auto;
 	background-color: #c0c0c0;
-	padding: 10px;
+	padding: 10px 0 10px 0;
+}
+
+.copyright {
+	margin-top: 20px;
 }
 
 .col, .address-col {

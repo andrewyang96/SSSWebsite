@@ -66,7 +66,7 @@ router.get('/:path?', function (req, res, next) {
 	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
 	if (req.query['search']) {
 		var searchQuery = req.query['search'];
-		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery;
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery + "+site:sss.ae.illinois.edu";
 		console.log("Redirecting to " + searchRedirectURL);
 		res.writeHead(301, {Location: searchRedirectURL});
 		res.end();
@@ -114,7 +114,7 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
 	if (req.query['search']) {
 		var searchQuery = req.query['search'];
-		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery;
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery + "+site:sss.ae.illinois.edu";
 		console.log("Redirecting to " + searchRedirectURL);
 		res.writeHead(301, {Location: searchRedirectURL});
 		res.end();
@@ -160,7 +160,7 @@ router.get('/:path?/:subpath?/:subpath2?', function (req, res, next) {
 	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
 	if (req.query['search']) {
 		var searchQuery = req.query['search'];
-		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery;
+		var searchRedirectURL = "https://www.google.com/search?q=" + searchQuery + "+site:sss.ae.illinois.edu";
 		console.log("Redirecting to " + searchRedirectURL);
 		res.writeHead(301, {Location: searchRedirectURL});
 		res.end();

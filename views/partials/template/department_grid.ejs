@@ -6,7 +6,9 @@
 		<ul class="tr">
 			<% row.forEach(function (department) { %>
 				<li class="department">
-					<img src="<%= department['img'] %>" alt="<%= department['name'] %>" class="departmenticon">
+					<a href="<%= department['url'] %>">
+						<img src="<%= department['img'] %>" alt="<%= department['name'] %>" class="departmenticon">
+					</a>
 					<strong><%= department['name'] %></strong>
 					<%- department['html'] %>
 				</li>
