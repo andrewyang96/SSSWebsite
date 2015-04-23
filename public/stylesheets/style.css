@@ -113,6 +113,10 @@ have a fixed width and height (but it's not required).
 	margin-right: auto;
 }
 
+.carousel-image {
+	width: 1024px;
+}
+
 /* Image Caption CSS */
 
 .imagecaption {
