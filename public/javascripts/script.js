@@ -34,16 +34,32 @@ $(document).ready(function () {
 		setExtensions();
 	};
 
-	var changeCaption = function (element) {
-		//console.log(element);
-		var comment = element.find('img').attr('alt');
-        var title = element.find('img').attr('title');
-        if(comment && title) $('.imagecaption').html('<strong class="captiontitle">'+title+'</strong><p class="captiontext">'+comment+'</p>');
-	}
-
 	// INITIALIZE BUTTON
 	$("#subscribebutton").button();
 
+	// SIDENAV AUTOSCROLL
+	$(window).on('scroll', function () {
+		// console.log("Offset:");
+		// console.log($('.sidebar').offset());
+		var scrollPos = $(document).scrollTop();
+		// console.log("ScrollTop:");
+		// console.log(scrollPos);
+		$('.sidebar').css({
+		    top : scrollPos
+		});
+		// console.log("scrolled to " + (scrollPos+top));
+	}).scroll();
+	
+});
+
+var changeCaption = function (element) {
+	//console.log(element);
+	var comment = element.find('img').attr('alt');
+    var title = element.find('img').attr('title');
+    if(comment && title) $('.imagecaption').html('<strong class="captiontitle">'+title+'</strong><p class="captiontext">'+comment+'</p>');
+}
+
+$(window).load(function () {
 	// INITIALIZE JCAROUSEL
 	var carousel = $(".jcarousel").on("jcarousel:createend", function (event, carousel) {
 		// Force jCarousel to update caption
@@ -121,18 +137,4 @@ $(document).ready(function () {
 	})
 
 	// END JCAROUSEL METHODS
-
-	// SIDENAV AUTOSCROLL
-	$(window).on('scroll', function () {
-		// console.log("Offset:");
-		// console.log($('.sidebar').offset());
-		var scrollPos = $(document).scrollTop();
-		// console.log("ScrollTop:");
-		// console.log(scrollPos);
-		$('.sidebar').css({
-		    top : scrollPos
-		});
-		// console.log("scrolled to " + (scrollPos+top));
-	}).scroll();
-	
 });

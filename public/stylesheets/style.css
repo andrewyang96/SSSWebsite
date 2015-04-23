@@ -244,6 +244,10 @@ i.icon {
 	font-size: 32px;
 }
 
+.ui-icon {
+	display: inline-block;
+}
+
 /* Social media bar CSS */
 
 #socialmedia-wrapper {
