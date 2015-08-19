@@ -1,11 +1,11 @@
 <!-- Start departments section -->
-<div id="#departmentsection-wrapper">
-	<strong class="title">DEPARTMENTS</strong>
+<div id="#departmentsection">
+	<h1 class="text-center"><strong>DEPARTMENTS</strong></h1>
 
 	<% departments.forEach(function (row) { %>
-		<ul class="tr">
+		<ul class="row">
 			<% row.forEach(function (department) { %>
-				<li class="department">
+				<li class="department col-xs-4">
 					<a href="<%= department['url'] %>">
 						<img src="<%= department['img'] %>" alt="<%= department['name'] %>" class="departmenticon">
 					</a>

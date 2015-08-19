@@ -24,19 +24,18 @@ a:active {
 
 .navbar-header img {
 	padding: 10px 0;
-	max-height: 80px;
+	height: 80px;
 }
 
 .navbar-default {
 	/* Override */
 	background: black;
 	border-color: #777;
-	height: 80px;
 }
 
 .navbar-nav {
 	/* Override */
-	height: 80px;
+	background: black;
 }
 
 .navbar-nav > li {
@@ -99,23 +98,15 @@ have a fixed width and height (but it's not required).
 /* Wrapper CSS */
 
 .jcarousel-wrapper {
-	height: 768px; /* HEIGHT OF WRAPPER */
-	width: 1024px; /* WIDTH OF WRAPPER */
 	position: relative;
 	overflow: hidden;
-	margin: 0 auto 0 auto;
-}
-
-.jcarousel ul li img {
-	height: 768px; /* MATCH WITH .jcarousel-wrapper's height! */
-	width: auto;
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .carousel-image {
-	width: 1024px;
+	display: block;
+	height: 100%;
+	width: 100% !important;
+	object-fit: cover;
 }
 
 /* Image Caption CSS */
@@ -222,47 +213,36 @@ i.icon {
 
 /* Social media bar CSS */
 
-#socialmedia-wrapper {
-	position: relative;
-	width: 1000px;
-	margin: 0 auto 20px auto;
-	padding: 12px;
-	clear: both;
+#socialmedia {
 	background-color: #c0c0c0;
-	
 	-webkit-border-radius: 0 0 8px 8px;
        -moz-border-radius: 0 0 8px 8px;
 	        border-radius: 0 0 8px 8px;
-	
+	padding: 5px 15px;
+	margin: 0 auto 20px auto;
 }
 
-#socialmedia-wrapper li {
+#socialmedia li {
 	display: inline-block;
 	list-style-type: none;
 	padding-right: 10px;
 	/* border: 1px solid; */
 }
 
-#socialmedia-wrapper li.button {
+#socialmedia li.button {
 	vertical-align: bottom;
 	padding-left: 5px;
 	padding-right: 5px;
 }
 
-#socialmedia-wrapper li #subscribebutton {
+#socialmedia li #subscribebutton {
 	font-size: 14px;
 }
 
 /* Departments CSS */
 
-#departmentsection-wrapper {
+#departmentsection {
 	margin: 20px auto 20px auto;
-}
-
-.title {
-	font-size: 48px;
-	text-align: center;
-	display: block;
 }
 
 .tr {
@@ -278,10 +258,6 @@ i.icon {
 	display: inline-block;
 	list-style-type: none;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	width: 300px;
-	padding: 10px;
 	vertical-align: top;
 }
 
@@ -293,9 +269,8 @@ i.icon {
 }
 
 .departmenticon {
-	/* Enforce 4:3 aspect ratio */
-	width: 300px;
-	height: 225px;
+	max-width: 100%;
+	height: auto !important;
 }
 
 /* Footer CSS */

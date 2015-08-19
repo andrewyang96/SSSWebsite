@@ -32,7 +32,13 @@ var changeCaption = function (element) {
 
 $(window).load(function () {
 	// INITIALIZE JCAROUSEL
-	var carousel = $(".jcarousel").on("jcarousel:createend", function (event, carousel) {
+	var carousel = $(".jcarousel").on("jcarousel:create jcarousel:reload", function () {
+		var el = $(this);
+		var width = el.innerWidth();
+		el.jcarousel("items").css("width", width + "px");
+		var height = el.innerHeight();
+		el.jcarousel("items").css("height", height + "px");
+	}).on("jcarousel:createend", function (event, carousel) {
 		// Force jCarousel to update caption
 		if (window.location.hash) {
 			//console.log('has hash');
