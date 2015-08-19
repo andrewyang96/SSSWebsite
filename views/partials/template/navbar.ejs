@@ -1,43 +1,23 @@
-<ul id="navbar"><!-- jMenu class is added, too -->
+<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="navbar-header">
+			<!-- Begin logo -->
+			<a href="/">
+				<img src="/images/logo.png" id="logo" alt="Student Space Systems">
+			</a>
+			<!-- End logo -->
 
-	<% var parseList = function (json, prefix) { %>
-		<% if (prefix === "") { %>
-			<ul id="navbar" class="jMenu">
-
-			<% Object.keys(json).forEach(function (item) { %>
-				<li class="jmenu-level-0">
-					<% var itemobj = json[item]; %>
-					<% // console.log(itemobj); %>
-					<% if (Object.keys(itemobj['children']).length > 0) { %>
-						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
-						<% // console.log("recursive call from 1st level"); %>
-						<% parseList(itemobj['children'], prefix + "/" + item); %>
-					<% } else { %>
-						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
-					<% } %>
-				</li>
-			<% }); %>
-		<% } else { %>
-			<ul>
-			<% Object.keys(json).forEach(function (item) { %>
-				<li>
-					<% var itemobj = json[item]; %>
-					<% // console.log(itemobj); %>
-					<% if (Object.keys(itemobj['children']).length > 0) { %>
-						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %> <span class="ui-icon ui-icon-carat-1-s"></span></a>
-						<% // console.log("recursive call"); %>
-						<% parseList(itemobj['children'], prefix + "/" + item); %>
-					<% } else { %>
-						<a href="<%= prefix + '/' + item %>"><%= itemobj['title'] %></a>
-					<% } %>
-				</li>
-			<% }); %>
-		<% } %>
-
-		</ul>
+			<!-- Mobile layout scroller -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
 		
-	<% } %>
-
-	<% parseList(navbar, ""); %>
-	
-</ul>
+		<div id="navbar" class="navbar-collapse collapse">
+			<% include navbaritems.ejs %>
+		</div>
+	</div>
+</nav>

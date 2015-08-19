@@ -1,39 +1,4 @@
 $(document).ready(function () {
-	// INITIALIZE JMENU
-	$("#navbar").jMenu();
-
-	// METHOD TO INITIALIZE EXTENSIONS' HEIGHTS AND POSITIONS
-	var setExtensions = function () {
-		// debugExtensions();
-		$(".navbar-extension").css({top : ($("#navbar").position().top + parseInt($("#navbar").css("margin-top"))) + "px"});
-		$(".navbar-extension").height($("#navbar").outerHeight()+1); // misaligned in firefox, yet remains aligned in chrome
-		$(".footer-extension").css({top : ($("#footer").position().top + parseInt($("#footer").css("margin-top"))) + "px"});
-		$(".footer-extension").height($("#footer").outerHeight());
-	};
-
-	debugExtensions = function () {
-		console.log("$('#navbar').position().top: " + $("#navbar").position().top);
-		console.log("$('#navbar').css('margin-top'): " + $("#navbar").css("margin-top"));
-		console.log("$('#navbar').height(): " + $("#navbar").height());
-		console.log("$('#navbar').outerHeight(): " + $("#navbar").outerHeight());
-		console.log("$('#footer').position().top: " + $("#footer").position().top);
-		console.log("$('#footer').css('margin-top'): " + $("#footer").css("margin-top"));
-		console.log("$('#footer').height(): " + $("#footer").height());
-		console.log("$('#footer').outerHeight(): " + $("#footer").outerHeight());
-
-		console.log("#navbar position: " + ($("#navbar").position().top + parseInt($("#navbar").css("margin-top"))));
-		console.log("#navbar height: " + $("#navbar").outerHeight());
-		console.log("#footer position: "  + ($("#footer").position().top + parseInt($("#footer").css("margin-top"))));
-		console.log("#footer height: " + $("#footer").outerHeight());
-
-		console.log(document.readyState);
-	};
-
-	// INITIALIZE EXTENSIONS' HEIGHTS AND POSITIONS AFTER DOM HAS LOADED PROPERLY
-	document.onreadystatechange = function () {
-		setExtensions();
-	};
-
 	// INITIALIZE BUTTON
 	$("#subscribebutton").button();
 
@@ -49,7 +14,13 @@ $(document).ready(function () {
 		});
 		// console.log("scrolled to " + (scrollPos+top));
 	}).scroll();
-	
+
+	// FLUSH FOOTER TO BOTTOM
+	var actualBottom = $("#footer").offset().top + $("#footer").height();
+	if (actualBottom < $(window).height()) {
+		var newMarginTop = $(window).height() - actualBottom;
+		$("#footer").css({"margin-top": newMarginTop});
+	}
 });
 
 var changeCaption = function (element) {

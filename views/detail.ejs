@@ -5,18 +5,14 @@
 	</head>
 
 	<body>
-		<div class="canvas">
-			<% include partials/template/header.ejs %>
-
-			<div class="wide-row">
-				<% include partials/template/sidenav.ejs %>
-				
-				<% include partials/content/content.ejs %>
-			</div>
-
-			<% include partials/template/footer.ejs %>
+		<% include partials/template/navbar.ejs %>
+		
+		<div class="container">
+			<% include partials/template/sidenav.ejs %>
+			
+			<% include partials/content/content.ejs %>
 		</div>
 
-		<% include partials/template/extensions.ejs %>
+		<% include partials/template/footer.ejs %>
 	</body>
 </html>

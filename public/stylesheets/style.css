@@ -1,5 +1,6 @@
 body {
 	font-family: 'Expletus Sans', cursive;
+	padding-top: 80px; /* For navbar */
 }
 
 a:link {
@@ -21,34 +22,34 @@ a:active {
 
 /*=== Begin navbar CSS ===*/
 
-/* Center jMenu */
-.jMenu {
-  	margin: 0 auto 0 auto;
-  	width: 1024px;
+.navbar-header img {
+	padding: 10px 0;
+	max-height: 80px;
 }
 
-/* Format top-level li */
-.jMenu li {
-	padding: 0 16px 0 16px; /* Adjust as necessary */
+.navbar-default {
+	/* Override */
 	background: black;
+	border-color: #777;
+	height: 80px;
 }
 
-/* Format second-level li */
-.jMenu li ul li {
-	width: 256px;
-	/* background: transparent; */
-	border: none;
+.navbar-nav {
+	/* Override */
+	height: 80px;
 }
 
-/* Format text */
-.jMenu li a, .jMenu li ul li a {
-	font-size: 16px;
-	/* color: black; */
+.navbar-nav > li {
+	margin: 15px auto 15px auto;
 }
 
-/* Format hover */
-.jMenu li a:active, .jMenu li ul li a:hover {
-	/* background: transparent; */
+.navbar-nav > li > a:hover {
+	/* Override */
+	color: #555 !important;
+}
+
+.font-bold {
+	font-weight: bold !important;
 }
 
 /*=== End navbar CSS ===*/
@@ -189,7 +190,8 @@ have a fixed width and height (but it's not required).
     display: inline-block;
     font-size: 16px;
     line-height: 25px;
-    min-width: 25px;
+    min-height: 30px;
+    min-width: 30px;
     background: #fff;
     color: #4E443C;
     -webkit-border-radius: 20px;
@@ -209,36 +211,6 @@ have a fixed width and height (but it's not required).
 }
 
 /*=== End image gallery CSS ===*/
-
-.canvas {
-	width: 1200px;
-	overflow: hidden;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.row {
-	width: 1024px;
-	margin: 0 auto 0 auto;
-}
-
-.wide-row {
-	width: inherit;
-	margin: 0 auto 0 auto;
-}
-
-#logo {
-	height: 100px;
-	width: auto;
-	clear: left;
-	margin: 0;
-}
-
-#searchbar {
-	float: right;
-	clear: right;
-	margin-top: 20px;
-}
 
 i.icon {
 	font-size: 32px;
@@ -329,33 +301,20 @@ i.icon {
 /* Footer CSS */
 
 .footer {
-	width: 1024px;
 	margin: 20px auto 0 auto;
 	background-color: #c0c0c0;
-	padding: 10px 0 10px 0;
+	padding: 20px 0 20px 0;
 }
 
 .copyright {
 	margin-top: 20px;
 }
 
-.col, .address-col {
-	position: relative;
-	margin: auto;
-	width: 250px;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.col {
-	padding-top: 20px;
-}
-
-.col ul {
+.footer ul {
 	padding: 0;
 }
 
-.col ul li {
+.footer li {
 	list-style-type: none;
 }
 
@@ -366,36 +325,17 @@ i.icon {
 	margin: 0;
 }
 
-.address-col {
+address {
 	padding-top: 10px;
 }
 
-.address-col p {
-	margin: 4px;
+address p {
+	margin: 4px 4px 4px 0;
+	font-style: italic;
 }
 
 .copyright {
 	text-align: center;
-}
-
-/* Visual extensions CSS */
-
-.navbar-extension {
-	left: 0;
-	width: 100%;
-	background: black;
-	position: absolute;
-	clear: both;
-	z-index: -9999;
-}
-
-.footer-extension {
-	left: 0;
-	width: 100%;
-	background: #c0c0c0;
-	position: absolute;
-	clear: both;
-	z-index: -9999;
 }
 
 /* Sidenav CSS */

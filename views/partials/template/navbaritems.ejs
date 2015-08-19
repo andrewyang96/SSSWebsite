@@ -1,0 +1,35 @@
+<ul id="navitems" class="nav navbar-nav navbar-right">
+<% Object.keys(navbar).forEach(function (item) { %>
+	<li>
+		
+		<% if (Object.keys(navbar[item].children).length > 0) { %>
+
+		<a href="/<%= item %>" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+			<%= navbar[item].title %> <span class="caret"></span>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="/<%= item %>" class="font-bold">
+					<%= navbar[item].title %>
+				</a>
+			</li>
+
+			<% Object.keys(navbar[item].children).forEach(function (subitem) { %>
+			<li>
+				<a href="/<%= item %>/<%= subitem %>">
+					<%= navbar[item].children[subitem].title %>
+				</a>
+			</li>
+			<% }); %>
+		</ul>
+		
+		<% } else { %>
+
+		<a href="/<%= item %>">
+			<%= navbar[item].title %>
+		</a>
+		<% } %>
+
+	</li>
+<% }); %>
+</ul>
