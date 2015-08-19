@@ -60,7 +60,7 @@
     "img": "/images/execboard/zachromano.jpg",
     "title": "Treasurer",
     "email": "zcroman2@illinois.edu",
-    "bio": "<p>Zach is the treasurer of Student Space Systems.  His responsibility is to ensure the proper allocation of funds amongst the group.  This includes making all of the purchases for the organization.  Zach is a first year member and joined SSS this year after learning of their successes.  Aside from studying aerospace engineering, Zach enjoys football, running, and painting.</p>"
+    "bio": "<p>Zach is the treasurer of Student Space Systems. His responsibility is to ensure the proper allocation of funds amongst the group. This includes making all of the purchases for the organization. Zach is a first year member and joined SSS this year after learning of their successes. Aside from studying aerospace engineering, Zach enjoys football, running, and painting.</p>"
   },
   {
     "name": "Max Archer",
@@ -68,5 +68,12 @@
     "title": "Director of Special Projects",
     "email": "mlarchr2@illinois.edu",
     "bio": "<p>Max is the Director of Special Projects. His job is to oversee the Space Grant competition, the level one certification project, and all of the odd jobs Special Projects has taken under its wing. Currently his flagship project is the design of the Reactive Control System, which would allow the rocket to autonomously correct its course midflight using compressed gas. Max is a freshman electrical engineer, and, in what little spare time he has, can be found reading science fiction, playing jazz piano, or biking a little too fast around campus.</p>"
+  },
+  {
+    "name": "Andrew Yang",
+    "img": "/images/execboard/andrewyang.jpg",
+    "title": "Web Developer",
+    "email": "ayang14@illinois.edu",
+    "bio": "<p>Andrew is the developer of this website. He has had web development experience since fall of 2014 (his freshman year), and credits the coding of this website for honing his web development skills. After all, learning by doing is the most effective kind of learning. Andrew is currently a sophomore computer science major, and is an active member of ACM. His hobbies include programming for fun, playing Smash Bros, and attending hackathons.</p>"
   }
 ]
