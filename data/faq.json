@@ -1,14 +1,26 @@
 [
   {
-    "question": "What does SSS stand for?",
-    "answer": "Student Space Systems."
+    "question": "What does the SSS do?",
+    "answer": "SSS is a technical organization at the University of Illinois at Urbana-Champaign dedicated to achieving the goal of sending a completely student designed, fabricated, and built rocket to space."
   },
   {
-    "question": "Which university are you guys from?",
-    "answer": "University of Illinois at Urbana-Champaign."
+    "question": "How many members does SSS have, and what are members like?",
+    "answer": "As of the end of the 2014-2015 school year, SSS has approximately 50 active members and many more on our mailing lists. During that school year, most members were freshmen, and almost every other member was a sophomore. The highest representation came from the Aerospace Engineering and Electrical and Computer Engineering departments, but around 25% of members came from other departments such as Computer Science, Mechanical Science and Engineering, Material Science and Engineering, and Physics."
   },
   {
-    "question": "What do you guys do?",
-    "answer": "We launch rockets."
+    "question": "How and when can I get involved?",
+    "answer": "As a student, you can contact us at <a href='mailto:uiuc.sss@gmail.com'>uiuc.sss@gmail.com</a> year round to hear about our meetings and how you can get involved."
+  },
+  {
+    "question": "I’m an incoming freshman with very little technical experience. What would I be allowed to work on?",
+    "answer": "One of our priorities is to enable everyone to work on what they are most interested in. Here at SSS, we aim to do what no university group has done before, so our projects are a learning opportunity for everyone. In order for us to achieve our long term goals, we must gain new members every year and equip them with the necessary skills as quickly and thoroughly as possible."
+  },
+  {
+    "question": "What majors are you looking for?",
+    "answer": "SSS is a multidisciplinary organization that has members from several different engineering and science majors. However, we do not restrict membership by major; we’ll work with anyone who wants to learn."
+  },
+  {
+    "question": "Can I get class credit for working with SSS?",
+    "answer": "Yes! We offer a class called AE 199 SSS, in which you can earn one hour per semester for giving a couple presentations about your work with SSS. For some majors, if you take this class 3 semesters in a row, it will turn into a 3-hour technical elective for graduation purposes."
   }
 ]
