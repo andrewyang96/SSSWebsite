@@ -41,7 +41,7 @@ router.get('/', function (req, res) {
 	fs.readFile("./data/departments.json", function (err, data) {
 		if (err) throw err;
 
-		var departments = spliceArray(JSON.parse(data), 3);
+		var departments = JSON.parse(data);
 
 		var navbar = getNavbar();
 

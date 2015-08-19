@@ -245,27 +245,9 @@ i.icon {
 	margin: 20px auto 20px auto;
 }
 
-.tr {
-	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	clear: both;
-	width: 1000px;
-	padding: 0;
-}
-
 .department {
 	display: inline-block;
 	list-style-type: none;
-	position: relative;
-	vertical-align: top;
-}
-
-.department strong {
-	position: relative;
-	text-align: center;
-	clear: both;
-	font-size: 24px;
 }
 
 .departmenticon {

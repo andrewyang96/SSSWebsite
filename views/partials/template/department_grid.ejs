@@ -2,19 +2,17 @@
 <div id="#departmentsection">
 	<h1 class="text-center"><strong>DEPARTMENTS</strong></h1>
 
-	<% departments.forEach(function (row) { %>
-		<ul class="row">
-			<% row.forEach(function (department) { %>
-				<li class="department col-xs-4">
-					<a href="<%= department['url'] %>">
-						<img src="<%= department['img'] %>" alt="<%= department['name'] %>" class="departmenticon">
-					</a>
-					<strong><%= department['name'] %></strong>
-					<%- department['html'] %>
-				</li>
-			<% }); %>
-		</ul>
+	<ul class="row">
+	<% departments.forEach(function (department) { %>
+		<li class="department col-sm-4 col-xs-12">
+			<a href="<%= department['url'] %>">
+				<img src="<%= department['img'] %>" alt="<%= department['name'] %>" class="departmenticon">
+			</a>
+			<h3><strong><%= department['name'] %></strong></h3>
+			<%- department['html'] %>
+		</li>
 	<% }); %>
+	</ul>
 	
 </div>
 <!-- End departments section -->
