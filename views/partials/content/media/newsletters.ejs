@@ -1,1 +1,9 @@
-<p>Newsletters coming soon...</p>
+<h3>Archived Newsletters</h3>
+
+<ul>
+	<% newsletters.forEach(function (item) { %>
+		<li>
+			<a target="_blank" href="<%= item.url %>"><%= item.month %> <%= item.year %></a>
+		</li>
+	<% }); %>
+</ul>

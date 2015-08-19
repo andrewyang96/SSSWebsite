@@ -26,6 +26,24 @@ var getNavbar = function () {
 	return JSON.parse(fs.readFileSync("./data/navbar.json"));
 };
 
+var monthNames = [
+    "January", "February", "March",
+    "April", "May", "June",
+    "July", "August", "September",
+    "October", "November", "December"
+];
+
+/**
+ * Returns the year and month of a file with its filename formatted YYYY-MM.pdf
+ */
+var parseNewsletterFilename = function (filename) {
+	filename = filename.split(".")[0];
+	var year = filename.split("-")[0];
+	var month = filename.split("-")[1]; // month must be in [01,12]
+	month = monthNames[month-1]; // month is undefined if not in [01,12]
+	return {year: year, month: month};
+};
+
 /* GET home page. */
 router.get('/', function (req, res) {
 	// MUST INCLUDE THIS IF STATEMENT FIRST THING IN ALL ROUTER CALLBACKS
@@ -138,13 +156,50 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 	var title = subpage['title'];
 	var sideNavTitle = sideNav['title'];
 
-	fs.readFile("./data/execboard.json", function (err, data) {
-		if (err) throw err;
-		
-		var execBoard = JSON.parse(data);
+	if (req.params.subpath === "execboard") {
+		fs.readFile("./data/execboard.json", function (err, data) {
+			if (err) throw err;
+			
+			var execBoard = JSON.parse(data);
+			
+			res.render('subpage', {
+				execBoard : execBoard,
+				navbar : navbar,
+				sideNav : sideNav,
+				sideNavTitle : sideNavTitle,
+				currentPage : "/" + req.params.path,
+				section : title,
+				ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
+				title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+			});
+		});
+	} else if (req.params.subpath === "newsletters") {		
+		fs.readdir("./public/newsletters", function (err, data) {
+			if (err) throw err;
 
+			var newsletters = [];
+
+			data.forEach(function (item) {
+				var newObj = parseNewsletterFilename(item);
+				newObj.url = "/newsletters/" + item;
+				newsletters.push(newObj);
+			});
+
+			newsletters.reverse();
+
+			res.render('subpage', {
+				newsletters: newsletters,
+				navbar : navbar,
+				sideNav : sideNav,
+				sideNavTitle : sideNavTitle,
+				currentPage : "/" + req.params.path,
+				section : title,
+				ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
+				title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+			});
+		});
+	} else {
 		res.render('subpage', {
-			execBoard : execBoard,
 			navbar : navbar,
 			sideNav : sideNav,
 			sideNavTitle : sideNavTitle,
@@ -153,7 +208,7 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 			ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
 			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
 		});
-	});
+	}
 });
 
 router.get('/:path?/:subpath?/:subpath2?', function (req, res, next) {
