@@ -18,12 +18,6 @@
     "url": "/departments/propulsion"
   },
   {
-    "name": "Launch Systems",
-    "html": "<p>The Department of Launch Systems takes over when the other departments' jobs end. They manage storage, transportation, and launch operations.</p>",
-    "img": "./images/departments/launch_systems.png",
-    "url": "/departments/launchsystems"
-  },
-  {
     "name": "Outreach",
     "html": "<p>We recognize, like many other organization, that our biggest legacy will be in those we inspire by our work. Our Outreach program will be the vessel by which this is made in the years to come through activities with youth and visits to local schools.</p>",
     "img": "./images/departments/outreach.png",

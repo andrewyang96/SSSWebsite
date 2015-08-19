@@ -5,11 +5,11 @@
 	<ul class="row">
 	<% departments.forEach(function (department) { %>
 		<li class="department col-sm-4 col-xs-12">
-			<a href="<%= department['url'] %>">
-				<img src="<%= department['img'] %>" alt="<%= department['name'] %>" class="departmenticon">
+			<a href="<%= department.url %>">
+				<img src="<%= department.img %>" alt="<%= department.name %>" class="departmenticon" />
 			</a>
-			<h3><strong><%= department['name'] %></strong></h3>
-			<%- department['html'] %>
+			<h3><strong><a href="<%= department.url %>"><%= department.name %></a></strong></h3>
+			<%- department.html %>
 		</li>
 	<% }); %>
 	</ul>

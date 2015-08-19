@@ -16,11 +16,15 @@ $(document).ready(function () {
 	}).scroll();
 
 	// FLUSH FOOTER TO BOTTOM
-	var actualBottom = $("#footer").offset().top + $("#footer").height();
-	if (actualBottom < $(window).height()) {
-		var newMarginTop = $(window).height() - actualBottom;
-		$("#footer").css({"margin-top": newMarginTop});
-	}
+	var flushFooter = function () {
+		var actualBottom = $("#footer").offset().top + $("#footer").height();
+		if (actualBottom < $(window).height()) {
+			var newMarginTop = $(window).height() - actualBottom;
+			$("#footer").css({"margin-top": newMarginTop});
+		}
+	};
+	flushFooter();
+	$(window).resize(flushFooter);
 });
 
 var changeCaption = function (element) {

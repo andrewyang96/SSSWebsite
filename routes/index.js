@@ -97,7 +97,7 @@ router.get('/:path?', function (req, res, next) {
 		});
 		
 	} else {
-		res.render('detail', {
+		res.render('subpage', {
 			navbar : navbar,
 			sideNav : sideNav,
 			sideNavTitle : sideNavTitle,

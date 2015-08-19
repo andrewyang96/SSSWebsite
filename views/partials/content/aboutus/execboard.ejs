@@ -1,7 +1,17 @@
 <% execBoard.forEach(function (item) { %>
-	<h2><a href="mailto:<%= item['email'] %>"><%= item['name'] %></a></h2>
-	<h3><%= item['title'] %></h3>
-	<img class="bioimg" src="<%= item['img'] %>">
-	<%- item['bio'] %>
-	<br/>
+	<hr>
+	
+	<h2><a href="mailto:<%= item.email %>"><%= item.name %></a></h2>
+
+	<h3><%= item.title %></h3>
+
+	<div class="row">
+		<div class="col-sm-2 col-xs-12">
+			<img class="bioimg" src="<%= item.img %>" />
+		</div>
+
+		<div class="col-sm-10 col-xs-12">
+			<%- item.bio %>
+		</div>
+	</div>
 <% }); %>

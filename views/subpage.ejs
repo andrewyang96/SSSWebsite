@@ -8,9 +8,15 @@
 		<% include partials/template/navbar.ejs %>
 		
 		<div class="container">
-			<% include partials/template/sidenav.ejs %>
-			
-			<% include partials/content/content.ejs %>
+			<div class="row">
+				<div class="col-sm-2 col-xs-12">
+					<% include partials/template/sidenav.ejs %>
+				</div>
+				
+				<div class="col-sm-10 col-xs-12">
+					<% include partials/content/content.ejs %>
+				</div>
+			</div>
 		</div>
 
 		<% include partials/template/footer.ejs %>
