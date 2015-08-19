@@ -2,16 +2,9 @@
   {
     "name": "Benjamin Wexler",
     "img": "/images/execboard/benwexler.jpg",
-    "title": "President",
+    "title": "Technical President",
     "email": "bwexler2@illinois.edu",
     "bio": "<p>Benjamin is the President and Founder of Student Space Systems. In this role, he ensures that the board works effectively, sets club goals, and leads project planning.  Benjamin also serves as technical lead overseeing the design, construction, and launch of each year’s primary rocket project. Most importantly, Benjamin is committed to doing whatever it takes to enable SSS to achieve success while inspiring engineers in the process. When Benjamin is not busy leading SSS, he can be found playing ice hockey for the Illini Hockey team, flying planes, reading, or following the San Jose sharks.</p>"
-  },
-  {
-    "name": "Christopher Smith",
-    "img": "/images/execboard/chrissmith.jpg",
-    "title": "Vice President",
-    "email": "cesmith7@illinois.edu",
-    "bio": "<p>Chris is the Vice-President and Co-founder of Student Space Systems.  He works alongside Benjamin to oversee the board and acts as the administrative head for the club.  Chris’ work behind the scenes ensures that the club is able to function effectively and meet its goals on time.  His experience in high-powered rocketry and robotics allows him to act as a generalized technical advisor when reviewing the club’s projects.  He also has experience with digital design and makes many of the clubs presentations and logos.  In his free time, he enjoys traveling, writing short stories, and exploring the outdoors.</p>"
   },
   {
     "name": "James Hall",
@@ -19,13 +12,6 @@
     "title": "Administrative President",
     "email": "jdhall3@illinois.edu",
     "bio": "<p>James is the Administrative President of Student Space Systems. It is his responsibility to oversee the board with Benjamin.  Although not a founder, he has been a member since the start of the club in 2014 and has worked as a project manager in propulsion. James works to ensure that the club meets deadlines and helps to communicate with the University. In his free time, he likes to hike, listen to music, and hang out with friends.</p>"
-  },
-  {
-    "name": "Nick Campbell",
-    "img": "/images/execboard/nicksmall.jpg",
-    "title": "Director of Launch Systems",
-    "email": "ncampbe2@illinois.edu",
-    "bio": "<p>Nicholas is a sophomore majoring in Aerospace Engineering. He was brought onto the SSS Board to be the Director of Launch Systems. He heads his department’s main project, a custom Launch Tower to accommodate the club’s larger rockets in the near future. His roles also include heading the rocket recovery teams at the launches and setting up any equipment needed for launch. In everyday life, Nicholas enjoys listening to music, watching Netflix, and hanging out with his friends.</p>"
   },
   {
     "name": "David Degenhardt",
@@ -63,25 +49,11 @@
     "bio": "<p>Courtney is a sophomore in Aerospace Engineering. She is responsible for overseeing the safety of Student Space Systems activities, including build sessions, tests, and launches, as well as safety training for all members. She is also responsible for obtaining launch waivers from the FAA on behalf of SSS. When she is not working on safety for SSS, she participates in Air Force ROTC, and in her spare time can be found reading, watching Netflix, and spending time with friends.</p>"
   },
   {
-    "name": "Adam Barbato",
-    "img": "/images/execboard/adambarbato.jpg",
-    "title": "Engineering Council Representative",
-    "email": "barbato2@illinois.edu",
-    "bio": "<p>Adam is a sophomore in Computer Science who has been with SSS since nearly its inception. Currently, he is the Engineering Council Representative who maintains relations with the Engineering Council and runs SSS’s Engineering Open House exhibit. In his free time, Adam can be found reading, camping and playing beaver golf.</p>"
-  },
-  {
     "name": "Shree Das",
     "img": "/images/execboard/shreedas.jpg",
     "title": "Secretary",
     "email": "sdas16@illinois.edu",
     "bio": "<p>Shree is the secretary of Student Space Systems. He is responsible for improving communications between the various departments while eliminating extraneous practices in order to make the group more efficient. His specific jobs are to attend board meetings and accurately record those discussions, remind other board members what their weekly tasks are, update social media platforms on new events and updates, and send out monthly newsletters to the group as well as the AE department. Shree is currently a freshman in aerospace engineering. His hobbies include reading non-fiction, singing, and covering songs on piano.</p>"
-  },
-  {
-    "name": "Rachel Moseson",
-    "img": "/images/execboard/rachelmoseson.jpg",
-    "title": "Aerospace Engineering Undergraduate Advisory Board Representative",
-    "email": "moseson2@illinois.edu",
-    "bio": "<p>Rachel is a Freshman in Aerospace Engineering. Her main duties as the Aerospace Engineering Undergraduate Advisory Board Representative (AEUAB) include representing the interests and ideas of SSS and all its constituents at the monthly AEUAB meetings in order to improve the Aerospace department as whole. She also takes on AEUAB projects that are outside of SSS’s area of interest but benefit the department as a whole. When she’s not in the studying or doing SSS activities, Rachel can be found enjoying her time with friends, running, or reading.</p>"
   },
   {
     "name": "Zach Romano",
