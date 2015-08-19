@@ -1,0 +1,21 @@
+{
+  "name": "SSSWebsite",
+  "version": "1.0.0",
+  "homepage": "https://github.com/andrewyang96/SSSWebsite",
+  "authors": [
+    "Andrew Yang <ayang14@illinois.edu>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.5"
+  }
+}

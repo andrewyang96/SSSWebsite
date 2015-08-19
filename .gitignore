@@ -31,3 +31,5 @@ node_modules
 .idea
 
 Thumbs.db
+# Bower components
+public/components
