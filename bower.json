@@ -17,11 +17,8 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "bootstrap": "~3.3.5",
-    "jcarousel": "~0.3.3",
+    "jcarousel": "0.3.1",
     "semantic-ui": "~2.0.8",
     "jqueryui": "~1.11.4"
-  },
-  "resolutions": {
-    "jcarousel": "0.3.1"
   }
 }
