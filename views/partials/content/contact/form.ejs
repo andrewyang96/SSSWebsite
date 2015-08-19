@@ -1,8 +1,15 @@
 <p>For all department relevant questions, please contact the director.</p>
-<p>For all other inquires please email us at <a href="mailto:uiuc.sss@gmail.co">uiuc.sss@gmail.com</a></p>
+
+<p>For all other inquires please email us at <a href="mailto:uiuc.sss@gmail.com">uiuc.sss@gmail.com</a></p>
+
+<!-- TODO: <<IF possible, the following form should send an email to uiuc.sss entitled “WEBSITE FORM SUBMISSION FROM [Name]:”>> -->
 
 <form>
 	Name:<br/>
-	<input type="text" name="name">
-	<input type="submit" value="Submit">
+	<input type="text" name="name" required />
+	<br/>
+	Inquiry:<br/>
+	<textarea name="inquiry" rows="4" cols="50" required></textarea>
+	<br/>
+	<input type="submit" value="Submit" />
 </form>

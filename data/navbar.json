@@ -25,10 +25,6 @@
       "different": {
         "title": "Why We're Different",
         "children": {}
-      },
-      "obstacles": {
-        "title": "Obstacles",
-        "children": {}
       }
     }
   },
@@ -36,15 +32,15 @@
     "title": "Rockets",
     "children": {
       "phaseone": {
-        "title": "Phase I",
+        "title": "Phase I - Ozark",
         "children": {}
       },
       "phasetwo": {
-        "title": "Phase II",
+        "title": "Phase II - Sierra",
         "children": {}
       },
       "phasethree": {
-        "title": "Phase III",
+        "title": "Phase III - Olympus",
         "children": {}
       }
     }
@@ -54,10 +50,6 @@
     "children": {
       "avionics": {
         "title": "Avionics",
-        "children": {}
-      },
-      "launchsystems": {
-        "title": "Launch Systems",
         "children": {}
       },
       "outreach": {
@@ -89,12 +81,8 @@
         "title": "Sponsorship",
         "children": {}
       },
-      "supportus": {
-        "title": "Support Us",
-        "children": {}
-      },
       "prospective": {
-        "title": "Prospective Students",
+        "title": "Prospective Members",
         "children": {}
       },
       "merch": {
