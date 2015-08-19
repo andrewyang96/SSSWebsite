@@ -20,5 +20,8 @@
     "jcarousel": "~0.3.3",
     "semantic-ui": "~2.0.8",
     "jqueryui": "~1.11.4"
+  },
+  "resolutions": {
+    "jcarousel": "0.3.1"
   }
 }
