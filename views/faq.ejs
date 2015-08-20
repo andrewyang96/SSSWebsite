@@ -8,24 +8,34 @@
 		<% include partials/template/navbar.ejs %>
 
 		<div class="container">
-			<div class="row"><!-- Include bottom margin -->
+			<div class="panel-group" id="accordion">
 				<h1>FAQ</h1>
-				<div id="accordion">
-					<% faq.forEach(function (item) { %>
-						<h3><%= item['question'] %></h3>
-						<div>
-							<p><%= item['answer'] %></p>
+
+				<% var count = 1 %>
+
+				<% faq.forEach(function (item) { %>
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h4 class="panel-title">
+							<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#question<%= count %>">
+								<%- item.question %>
+							</a>
+						</h4>
+					</div>
+
+					<div class="panel-collapse collapse" id="question<%= count %>">
+						<div class="panel-body">
+							<p><%- item.answer %></p>
 						</div>
-					<% }); %>
+					</div>
 				</div>
+
+				<% count += 1; %>
+				<% }); %>
+
 			</div>
 		</div>
 
 		<% include partials/template/footer.ejs %>
-		<script>
-			$(function() {
-    			$( "#accordion" ).accordion();
-  			});
-		</script>
 	</body>
 </html>
