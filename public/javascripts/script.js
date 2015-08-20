@@ -1,7 +1,4 @@
 $(document).ready(function () {
-	// INITIALIZE BUTTON
-	$("#subscribebutton").button();
-
 	// SIDENAV AUTOSCROLL
 	$(window).on('scroll', function () {
 		// console.log("Offset:");
