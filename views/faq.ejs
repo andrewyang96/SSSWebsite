@@ -15,13 +15,15 @@
 
 				<% faq.forEach(function (item) { %>
 				<div class="panel panel-default">
-					<div class="panel-heading">
-						<h4 class="panel-title">
-							<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#question<%= count %>">
+					
+					<a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" data-target="#question<%= count %>">
+						<div class="panel-heading">
+							<h4 class="panel-title">
 								<%- item.question %>
-							</a>
-						</h4>
-					</div>
+							</h4>
+						</div>
+					</a>
+					
 
 					<div class="panel-collapse collapse" id="question<%= count %>">
 						<div class="panel-body">
