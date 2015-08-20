@@ -110,7 +110,7 @@ router.get('/:path?', function (req, res, next) {
 			res.render('faq', {
 				navbar : navbar,
 				faq : faq,
-				title : "Student Space Systems at University of Illinois at Urbana-Champaign | FAQ"
+				title : "FAQ | Student Space Systems at University of Illinois at Urbana-Champaign"
 			});
 		});
 		
@@ -122,7 +122,7 @@ router.get('/:path?', function (req, res, next) {
 			currentPage : "/" + req.params.path,
 			section : title,
 			ejsPath : req.params.path + ".ejs",
-			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+			title : title + " | Student Space Systems at the University of Illinois at Urbana-Champaign"
 		});
 	}
 
@@ -170,7 +170,7 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 				currentPage : "/" + req.params.path,
 				section : title,
 				ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
-				title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+				title : title + " | Student Space Systems at the University of Illinois at Urbana-Champaign"
 			});
 		});
 	} else if (req.params.subpath === "newsletters") {		
@@ -195,7 +195,7 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 				currentPage : "/" + req.params.path,
 				section : title,
 				ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
-				title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+				title : title + " | Student Space Systems at the University of Illinois at Urbana-Champaign"
 			});
 		});
 	} else {
@@ -206,7 +206,7 @@ router.get('/:path?/:subpath?', function (req, res, next) {
 			currentPage : "/" + req.params.path,
 			section : title,
 			ejsPath : req.params.path + "/" + req.params.subpath + ".ejs",
-			title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+			title : title + " | Student Space Systems at the University of Illinois at Urbana-Champaign"
 		});
 	}
 });
@@ -251,7 +251,7 @@ router.get('/:path?/:subpath?/:subpath2?', function (req, res, next) {
 		currentPage : "/" + req.params.path,
 		section : title,
 		ejsPath : req.params.path + "/" + req.params.subpath + "/" + req.params.subpath2 + ".ejs",
-		title : "Student Space Systems at the University of Illinois at Urbana-Champaign | " + title
+		title : title + " | Student Space Systems at the University of Illinois at Urbana-Champaign"
 	});
 });
 
