@@ -48,6 +48,10 @@
 	
 <% } %>
 
-<ul class="sidebar">
+<ul class="sidebar list-unstyled hidden-xs" id="sidebar-scroll">
+	<% parseList(sideNav['children'], currentPage) %>
+</ul>
+
+<ul class="sidebar unstyled visible-xs">
 	<% parseList(sideNav['children'], currentPage) %>
 </ul>

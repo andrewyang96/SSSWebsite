@@ -9,7 +9,7 @@ $(document).ready(function () {
 		var scrollPos = $(document).scrollTop();
 		// console.log("ScrollTop:");
 		// console.log(scrollPos);
-		$('.sidebar').css({
+		$('#sidebar-scroll').css({
 		    top : scrollPos
 		});
 		// console.log("scrolled to " + (scrollPos+top));
