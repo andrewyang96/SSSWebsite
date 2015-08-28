@@ -77,6 +77,10 @@
   "contact": {
     "title": "Contact Us",
     "children": {
+      "calendar": {
+        "title": "Calendar",
+        "children": {}
+      },
       "sponsorship": {
         "title": "Sponsorship",
         "children": {}
