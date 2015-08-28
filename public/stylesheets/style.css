@@ -30,7 +30,7 @@ a:active {
 .navbar-default {
 	/* Override */
 	background: black;
-	border-color: #777;
+	border-color: #808080;
 }
 
 .navbar-nav {
@@ -42,9 +42,14 @@ a:active {
 	margin: 15px auto 15px auto;
 }
 
+.navbar-nav > li > a {
+	/* Override */
+	color: white !important;
+}
+
 .navbar-nav > li > a:hover {
 	/* Override */
-	color: #555 !important;
+	color: #111 !important;
 }
 
 .font-bold {
