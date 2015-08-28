@@ -41,6 +41,11 @@ img.navbar-brand {
 
 .navbar-nav > li {
 	margin: 15px auto 15px auto;
+	/* Match height to fill navbar height */
+	height: 70px;
+	/* Shoutout to howtocenterincss.com for helping me */
+	display: flex;
+	align-items: center;
 }
 
 .navbar-nav > li > a {
