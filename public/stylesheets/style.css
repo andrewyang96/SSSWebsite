@@ -1,6 +1,6 @@
 body {
 	font-family: 'Expletus Sans', cursive;
-	padding-top: 80px; /* For navbar */
+	padding-top: 100px; /* For navbar */
 }
 
 a:link {
@@ -22,9 +22,10 @@ a:active {
 
 /*=== Begin navbar CSS ===*/
 
-.navbar-header img {
+img.navbar-brand {
 	padding: 10px 0;
-	height: 80px;
+	height: 100px;
+	margin-right: 5px;
 }
 
 .navbar-default {
