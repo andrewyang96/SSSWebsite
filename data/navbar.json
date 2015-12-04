@@ -56,8 +56,8 @@
         "title": "Avionics",
         "children": {}
       },
-      "outreach": {
-        "title": "Outreach",
+      "external": {
+        "title": "External",
         "children": {}
       },
       "propulsion": {

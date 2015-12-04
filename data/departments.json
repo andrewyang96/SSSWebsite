@@ -18,10 +18,10 @@
     "url": "/departments/propulsion"
   },
   {
-    "name": "Outreach",
-    "html": "<p>We recognize, like many other organization, that our biggest legacy will be in those we inspire by our work. Our Outreach program will be the vessel by which this is made in the years to come through activities with youth and visits to local schools.</p>",
+    "name": "External",
+    "html": "<p>Our External Department handles our relationships with companies as well as the community. Our educational outreach program hosts activities with youth and visits to local schools, and our recruitment program helps our fellow students find out about SSS.</p>",
     "img": "./images/departments/outreach.png",
-    "url": "/departments/outreach"
+    "url": "/departments/external"
   },
   {
     "name": "Special Projects",
