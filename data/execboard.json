@@ -35,11 +35,11 @@
     "bio": "<p>Florin is the Director of Propulsion and a Co-Founder of Student Space Systems. In this role he overlooks everything that involves engines and propulsion, and insures that the division is working effectively. Florin also assists in setting goals and project planning overall. Florin is very committed to the goals set by Student Space Systems and will do all he can to reach those goals. In his spare time, Florin can be found playing soccer, building model rockets, reading sci-fi, following Bayern Munich and debating politics.</p>"
   },
   {
-    "name": "Jake Goldrich",
-    "img": "/images/execboard/jakegoldrich.jpg",
+    "name": "Sean Nachnani",
+    "img": "/images/execboard/seannachnani.jpg",
     "title": "External Director",
-    "email": "jjgoldr2@illinois.edu",
-    "bio": "<p>Jake is responsible for educational outreach, recruiting, and managing public relations for Student Space Systems. After focusing his efforts on the preparations for successful Engineering Open House and Quad Day exhibits geared at effectively introducing campus to the newest club in Aerospace, Jake is working on leveraging social media to continue recruitment. Earlier this year he spearheaded an interactive outreach event with a local 4-H youth group, and in the future Jake hopes to grow the educational outreach program with frequent similar presentations at various project fairs and middle schools to teach kids and students about high-powered rocketry. When he's not working on the next great idea for ed-out, Jake can be found following his beloved Chicago Bears, White Sox, Blackhawks, and Bulls; or else playing playing football, baseball, ice hockey, or basketball himself.</p>"
+    "email": "nachnan2@illinois.edu",
+    "bio": "<p>Sean is a sophomore majoring in Electrical Engineering. He is in charge of Corporate Outreach, Educational Outreach, and Recruitment. Sean handles the external face of SSS, from developing and maintaining relationships with companies to strengthening our member base through Engineering Open House and Quad Day exhibits. He also focuses on inspiring the next generation of engineers through events like soldering workshops and presentations at local schools. When he's not meeting with companies or coming up with new ed-out and recruitment ideas, Sean can be found playing soccer, reading, or beating James in Smash Bros.</p>"
   },
   {
     "name": "Courtney Reid",
@@ -68,6 +68,20 @@
     "title": "Director of Special Projects",
     "email": "njohans2@illinois.edu",
     "bio": "<p>Nick is the Director of Special Projects. His responsibility is to manage the level one certification project, the Space Grant competition, and all projects handled by the Department of Special Projects. He has been a member since late 2014 and has worked on the autonomous quadcopter project and the long range telemetry for future rockets. Nick is currently a junior computer engineering major and spends his free time reading and gaming with friends.</p>"
+  },
+  {
+    "name": "Oguzhan Altun",
+    "img": "/images/execboard/oguzhanaltun.jpg",
+    "title": "Aerospace Engineering Undergraduate Advisory Board Representative",
+    "email": "altun2@illinois.edu",
+    "bio": "<p>Oguzhan is the Aerospace Engineering Undergraduate Advisory Board representative of SSS. His responsibilities include discussing issues and ideas with faculty members and staff, organizing activities and events related to the aerospace department. He is currently a freshman in aerospace engineering and joined the club this year. His hobbies include playing guitar, tennis and occasionally windsurfing.</p>"
+  },
+  {
+    "name": "Boris Vasiljevic",
+    "img": "/images/execboard/borisvasiljevic.jpg",
+    "title": "Engineering Council Representative",
+    "email": "vasljvc2@illinois.edu",
+    "bio": "<p>Boris Vasiljevic is the Engineering Council Representative of Student Space Systems. He is responsible for maintaining communication between SSS and the Engineering Council Organization by attending meetings and relaying questions and information between the organizations. Boris is currently a freshman in Aerospace Engineering. In his free time, Boris can be found playing and watching Tennis, spending time with friends, and reading science fiction novels.</p>"
   },
   {
     "name": "Andrew Yang",
